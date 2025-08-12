@@ -14,9 +14,9 @@ describe('HomeView', () => {
         HeroSection: true,
         AboutSection: true,
         ProjectsSection: true,
-        ContactSection: true
-      }
-    }
+        ContactSection: true,
+      },
+    },
   })
 
   it('renders all required page sections', () => {

@@ -9,15 +9,15 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
-  }
+    component: HomeView,
+  },
 ]
 
 describe('Router', () => {
   it('renders the HomeView for the root path', async () => {
     const router = createRouter({
       history: createWebHistory(),
-      routes: routes
+      routes: routes,
     })
 
     await router.push('/')
@@ -25,8 +25,8 @@ describe('Router', () => {
 
     const wrapper = mount(App, {
       global: {
-        plugins: [router]
-      }
+        plugins: [router],
+      },
     })
 
     expect(wrapper.findComponent(HomeView).exists()).toBe(true)

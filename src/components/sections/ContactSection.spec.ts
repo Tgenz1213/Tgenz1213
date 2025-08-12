@@ -7,16 +7,14 @@ describe('ContactSection', () => {
 
   it('renders the static heading and paragraph', () => {
     expect(wrapper.find('h2').text()).toBe('Get In Touch')
-    expect(wrapper.find('p').text()).toContain(
-      "I'm currently open to new opportunities"
-    )
+    expect(wrapper.find('p').text()).toContain("I'm currently open to new opportunities")
   })
 
   it('renders a link for each item in contactLinks', () => {
     const expectedLinks = [
       { name: 'Email', url: 'mailto:timothy.j.genz@gmail.com' },
       { name: 'LinkedIn', url: 'https://linkedin.com/in/timothy-genz' },
-      { name: 'GitHub', url: 'https://github.com/tgenz1213' }
+      { name: 'GitHub', url: 'https://github.com/tgenz1213' },
     ]
 
     const renderedLinks = wrapper.findAll('.contact-card')

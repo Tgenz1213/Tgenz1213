@@ -16,9 +16,7 @@ describe('HeroSection', () => {
 
     const typingSpan = wrapper.find('.typing-effect')
     expect(typingSpan.exists()).toBe(true)
-    expect(typingSpan.text()).toBe(
-      'I am a passionate and creative Software Development Engineer.'
-    )
+    expect(typingSpan.text()).toBe('I am a passionate and creative Software Development Engineer.')
   })
 
   it('renders the call-to-action button with the correct text and href', () => {

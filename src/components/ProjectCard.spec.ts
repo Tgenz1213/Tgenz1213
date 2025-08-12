@@ -10,13 +10,13 @@ describe('ProjectCard', () => {
     description: 'This is a description for our test project.',
     image: '/images/test-image.png',
     link: 'https://example.com',
-    tags: ['Testing', 'Vue']
+    tags: ['Testing', 'Vue'],
   }
 
   const wrapper = mount(ProjectCard, {
     props: {
-      project: sampleProject
-    }
+      project: sampleProject,
+    },
   })
 
   it('renders the project title and description', () => {
