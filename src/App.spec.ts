@@ -9,12 +9,11 @@ describe('App', () => {
   const wrapper = mount(App, {
     global: {
       stubs: {
-        // Stub all children to isolate the App.vue test
         AppHeader: true,
         AppFooter: true,
-        RouterView: true // Stub RouterView to avoid needing a real router
-      }
-    }
+        RouterView: true,
+      },
+    },
   })
 
   it('renders the header and footer layout components', () => {

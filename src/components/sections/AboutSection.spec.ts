@@ -14,11 +14,7 @@ describe('AboutSection', () => {
   it('renders all content subheadings', () => {
     const subheadingTexts = wrapper.findAll('h3').map((node) => node.text())
 
-    expect(subheadingTexts).toEqual([
-      'Who I Am',
-      'My Background',
-      'What I Do'
-    ])
+    expect(subheadingTexts).toEqual(['Who I Am', 'My Background', 'What I Do'])
   })
 
   it('renders the profile image with correct alt text for accessibility', () => {
@@ -35,7 +31,7 @@ describe('AboutSection', () => {
       { label: 'Work Preference', value: 'Open to Remote' },
       { label: 'Security Clearance', value: 'Eligible' },
       { label: 'Relocation', value: 'Not open to relocation' },
-      { label: 'Education', value: "Pursuing Master's in CS" }
+      { label: 'Education', value: "Pursuing Master's in CS" },
     ]
 
     const statusItems = wrapper.findAll('.status-item')
