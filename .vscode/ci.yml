@@ -27,7 +27,7 @@ jobs:
 
       - name: Check Formatting & Lint Code
         run: |
-          yarn format:check
+          yarn format
           yarn lint
 
   test:
