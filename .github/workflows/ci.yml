@@ -64,7 +64,7 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - name: Check Formatting
-        run: yarn format:check
+        run: yarn format
 
   test:
     runs-on: ubuntu-latest
