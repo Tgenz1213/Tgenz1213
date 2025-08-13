@@ -10,6 +10,7 @@ RUN rm /etc/nginx/conf.d/default.conf \
     && rm -rf /usr/share/nginx/html/*
 
 COPY security/nginx.conf /etc/nginx/nginx.conf
+RUN chown -R nginx:nginx /var/cache/nginx
 COPY \
     --from=builder \
     --chown=nginx:nginx \
@@ -23,5 +24,16 @@ HEALTHCHECK \
     --timeout=5s \
     --start-period=10s \
     --retries=3 \
-    CMD wget --quiet --tries=1 --spider http://localhost:8080/ || exit 1
+    CMD \
+        wget \
+        --quiet \
+        --tries=1 \
+        --spider \
+        http://localhost:8080/ || exit 1
+    CMD \
+        wget \
+        --quiet \
+        --tries=1 \
+        --spider \
+        http://localhost:8080/ || exit 1
 CMD ["nginx", "-g", "daemon off;"]
