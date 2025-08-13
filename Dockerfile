@@ -10,7 +10,7 @@ RUN rm /etc/nginx/conf.d/default.conf \
     && rm -rf /usr/share/nginx/html/*
 
 COPY security/nginx.conf /etc/nginx/nginx.conf
-RUN chown -R nginx:nginx /var/run
+RUN chown -R nginx:nginx /var/cache/nginx
 COPY \
     --from=builder \
     --chown=nginx:nginx \
