@@ -1,41 +1,31 @@
-# tgenz1213
+## Hello! I'm Tim Genz
 
-This template should help get you started developing with Vue 3 in Vite.
+I am a software engineer (student) pursuing my master's in Computer Science (AI). 
 
-## Recommended IDE Setup
+[![website](https://img.shields.io/badge/Website-46a2f1.svg?&style=flat-square&logo=Google-Chrome&logoColor=white&link=https://portfolio.tgenz1213.me/)](https://portfolio.tgenz1213.me/)
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Languages
+* Go
+* Python
+* TypeScript/JavaScript
 
-## Customize configuration
+### Frameworks
+* Vue
+* React
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### DB
+* MongoDB
+* DynamoDB
+* SQLite3
+* MS Access
 
-## Project Setup
+### Cloud
+* AWS
+* GCP
 
-```sh
-yarn
-```
+### Office Suite
+* Yes
 
-### Compile and Hot-Reload for Development
-
-```sh
-yarn dev
-```
-
-### Compile and Minify for Production
-
-```sh
-yarn build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-yarn test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+### Drinks Coffee
+* Yes
