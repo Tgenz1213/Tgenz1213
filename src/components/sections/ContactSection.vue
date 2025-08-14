@@ -110,7 +110,7 @@ const contactLinks = [
 }
 
 .contact-icon {
-  stroke: #00bfff;
+  stroke: var(--accent-color);
   transition: stroke 0.3s ease;
 }
 </style>
