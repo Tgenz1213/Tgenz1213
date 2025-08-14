@@ -48,7 +48,7 @@
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
               <div class="status-text">
-                <strong>✨ Availability</strong>
+                <strong>Availability</strong>
                 <span>Open to new opportunities</span>
               </div>
             </div>
@@ -69,7 +69,7 @@
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
               <div class="status-text">
-                <strong>📍 Location</strong>
+                <strong>Location</strong>
                 <span>Maxwell, TX</span>
               </div>
             </div>
@@ -92,7 +92,7 @@
                 <line x1="1" y1="1" x2="23" y2="23"></line>
               </svg>
               <div class="status-text">
-                <strong>💻 Work Preference</strong>
+                <strong>Work Preference</strong>
                 <span>Open to Remote</span>
               </div>
             </div>
@@ -112,7 +112,7 @@
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
               <div class="status-text">
-                <strong>🛡️ Security Clearance</strong>
+                <strong>Security Clearance</strong>
                 <span>Eligible</span>
               </div>
             </div>
@@ -133,7 +133,7 @@
                 <circle cx="12" cy="12" r="10"></circle>
               </svg>
               <div class="status-text">
-                <strong>⚓ Relocation</strong>
+                <strong>Relocation</strong>
                 <span>Not open to relocation</span>
               </div>
             </div>
@@ -154,7 +154,7 @@
                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
               </svg>
               <div class="status-text">
-                <strong>🎓 Education</strong>
+                <strong>Education</strong>
                 <span>Pursuing Master's in CS</span>
               </div>
             </div>
