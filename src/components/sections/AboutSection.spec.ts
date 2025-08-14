@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils'
 import AboutSection from './AboutSection.vue'
 
 vi.mock('headshot.jpg', () => ({
-  default: 'mocked-image-path'
+  default: 'mocked-image-path',
 }))
 
 describe('AboutSection', () => {
