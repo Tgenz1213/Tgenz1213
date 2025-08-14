@@ -5,10 +5,7 @@
       <div class="about-content-wrapper">
         <div class="about-card">
           <div class="profile-image-wrapper">
-            <img
-              src="https://media.licdn.com/dms/image/v2/D5603AQFd-8ZenAPBgQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714993575583?e=1758153600&v=beta&t=tmMoBO4nBViMYLeFskii25q027k3PANxFWg6JzV4MUI"
-              alt="A headshot of me"
-            />
+            <img src="/public/headshot.jpg" alt="A headshot of Timothy Genz" />
           </div>
           <div class="about-text">
             <h3>Who I Am</h3>
