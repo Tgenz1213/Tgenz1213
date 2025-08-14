@@ -28,7 +28,7 @@ const projects: Project[] = [
     title: 'Weather App',
     description:
       'A React front end with Go backend that fetches weather data from the weather.gov API and caches the data with Redis.',
-    image: 'https://pbs.twimg.com/profile_images/1636943522325577729/ywCeIUoO_400x400.jpg',
+    image: 'weather_screen.png',
     link: 'https://github.com/Tgenz1213/weather',
     tags: ['Node.js', 'React', 'Go', 'API'],
   },
