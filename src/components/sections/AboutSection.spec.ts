@@ -1,6 +1,10 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import AboutSection from './AboutSection.vue'
+
+vi.mock('headshot.jpg', () => ({
+  default: 'mocked-image-path',
+}))
 
 describe('AboutSection', () => {
   const wrapper = mount(AboutSection)
@@ -17,11 +21,11 @@ describe('AboutSection', () => {
     expect(subheadingTexts).toEqual(['Who I Am', 'My Background', 'What I Do'])
   })
 
-  it('renders the profile image with correct alt text for accessibility', () => {
+  it('renders the profile image with correct alt text', () => {
     const image = wrapper.find('.profile-image-wrapper img')
 
     expect(image.exists()).toBe(true)
-    expect(image.attributes('alt')).toBe('A headshot of me')
+    expect(image.attributes('alt')).toBe('A headshot of Timothy Genz')
   })
 
   it('renders all status items with their correct text', () => {
