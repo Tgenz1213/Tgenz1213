@@ -11,12 +11,11 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  project: {
-    type: Object,
-    required: true,
-  },
-})
+import type { Project } from '@/types';
+
+defineProps<{
+  project: Project;
+}>();
 </script>
 
 <style scoped>
