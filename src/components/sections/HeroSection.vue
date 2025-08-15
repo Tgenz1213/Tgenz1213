@@ -73,7 +73,7 @@
 }
 
 .btn {
-  background-color: rgb(37, 80, 143);
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 15px 30px;
   border-radius: 8px;
@@ -86,6 +86,8 @@
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0 15px 35px rgba(0, 123, 255, 0.2);
 }
 </style>
