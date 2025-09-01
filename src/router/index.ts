@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 import { createRouter, createWebHistory, RouteRecordRaw, Router } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@/views/HomeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
