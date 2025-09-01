@@ -57,7 +57,6 @@ const projects: Project[] = [
 
 .project-grid {
   display: grid;
-  /* This is a great responsive grid setup, no changes needed here */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 40px;

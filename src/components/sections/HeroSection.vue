@@ -32,14 +32,11 @@
 
 <style scoped>
 #hero {
-  /* Replace background-color with a gradient */
   background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #2c496e);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
-
-  /* Keep the rest of your styles */
   height: 100vh;
-  color: #e0e0e0; /* A slightly softer white */
+  color: #e0e0e0;
   padding: 0 15px;
   text-align: center;
   display: flex;
@@ -48,7 +45,6 @@
   align-items: center;
 }
 
-/* Add the animation keyframes */
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
