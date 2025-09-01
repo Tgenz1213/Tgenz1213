@@ -5,7 +5,7 @@
       <div class="about-content-wrapper">
         <div class="about-card">
           <div class="profile-image-wrapper">
-            <img src="/public/headshot.jpg" alt="A headshot of Timothy Genz" />
+            <img src="/headshot.jpg" alt="A headshot of Timothy Genz" />
           </div>
           <div class="about-text">
             <h3>Who I Am</h3>
