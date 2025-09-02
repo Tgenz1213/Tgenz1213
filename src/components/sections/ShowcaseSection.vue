@@ -26,7 +26,6 @@ const { showcases, fetchShowcases } = useShowcase()
 onMounted(() => {
   fetchShowcases()
 })
-
 </script>
 
 <style scoped>

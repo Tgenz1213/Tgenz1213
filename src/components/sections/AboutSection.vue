@@ -54,7 +54,6 @@ const { statuses, fetchStatuses } = useStatuses()
 onMounted(() => {
   fetchStatuses()
 })
-
 </script>
 
 <style scoped>
