@@ -2,6 +2,12 @@
   --primary-color: #1a1a1a;
   --secondary-color: #f2f2f2;
   --accent-color: #00bfff;
+  --card-bg: #111217; /* slightly lighter than primary for subtle contrast */
+  --border: rgba(255, 255, 255, 0.04);
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  --card-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.6);
+  --chip-bg: #1f2937;
+  --chip-foreground: #e5e7eb;
 }
 
 html,
@@ -20,12 +26,13 @@ body {
 #app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main {
-  flex-grow: 1;
+  flex: 1 0 auto;
   overflow-y: auto;
+  padding-bottom: 2.5rem;
 }
 
 a {
