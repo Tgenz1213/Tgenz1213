@@ -30,131 +30,11 @@
 
       <div class="status-card">
         <div class="status-grid">
-          <div class="status-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="status-icon"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
+          <div v-for="(s, idx) in statuses" :key="idx" class="status-item">
+            <StatusIcon :name="s.icon" />
             <div class="status-text">
-              <strong>Availability</strong>
-              <span>Open to new opportunities</span>
-            </div>
-          </div>
-          <div class="status-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="status-icon"
-            >
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            <div class="status-text">
-              <strong>Location</strong>
-              <span>Maxwell, TX</span>
-            </div>
-          </div>
-          <div class="status-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="status-icon"
-            >
-              <path
-                d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8a13 13 0 0 1 13 13M2 4a17 17 0 0 1 17 17"
-              ></path>
-              <line x1="1" y1="1" x2="23" y2="23"></line>
-            </svg>
-            <div class="status-text">
-              <strong>Work Preference</strong>
-              <span>Open to Remote</span>
-            </div>
-          </div>
-          <div class="status-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="status-icon"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <div class="status-text">
-              <strong>Security Clearance</strong>
-              <span>Eligible</span>
-            </div>
-          </div>
-          <div class="status-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="status-icon"
-            >
-              <path d="M12 20v-8m0 0V4m0 8h8m-8 0H4"></path>
-              <circle cx="12" cy="12" r="10"></circle>
-            </svg>
-            <div class="status-text">
-              <strong>Relocation</strong>
-              <span>Not open to relocation</span>
-            </div>
-          </div>
-          <div class="status-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="status-icon"
-            >
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-            </svg>
-            <div class="status-text">
-              <strong>Education</strong>
-              <span>Pursuing Master's in CS</span>
+              <strong>{{ s.label }}</strong>
+              <span>{{ s.value }}</span>
             </div>
           </div>
         </div>
@@ -165,6 +45,8 @@
 
 <script setup lang="ts">
 import BaseSection from './BaseSection.vue'
+import StatusIcon from '../icons/StatusIcon.vue'
+import statuses from '../../data/statuses'
 </script>
 
 <style scoped>
