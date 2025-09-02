@@ -46,7 +46,15 @@
 <script setup lang="ts">
 import BaseSection from './BaseSection.vue'
 import StatusIcon from '../icons/StatusIcon.vue'
-import statuses from '../../data/statuses'
+import { useStatuses } from '@/composables/useStatuses'
+import { onMounted } from 'vue'
+
+const { statuses, fetchStatuses } = useStatuses()
+
+onMounted(() => {
+  fetchStatuses()
+})
+
 </script>
 
 <style scoped>

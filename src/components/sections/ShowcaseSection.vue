@@ -19,7 +19,14 @@
 import BaseSection from './BaseSection.vue'
 import ShowcaseCard from '@/components/ShowcaseCard.vue'
 import { useShowcase } from '@/composables/useShowcase'
-const { showcases } = useShowcase()
+import { onMounted } from 'vue'
+
+const { showcases, fetchShowcases } = useShowcase()
+
+onMounted(() => {
+  fetchShowcases()
+})
+
 </script>
 
 <style scoped>

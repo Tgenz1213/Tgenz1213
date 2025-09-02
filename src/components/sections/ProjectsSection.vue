@@ -10,7 +10,15 @@
 <script setup lang="ts">
 import BaseSection from './BaseSection.vue'
 import ProjectCard from '../ProjectCard.vue'
-import projects from '@/data/projects'
+import { useProjects } from '@/composables/useProjects'
+import { onMounted } from 'vue'
+
+const { projects, fetchProjects } = useProjects()
+
+onMounted(() => {
+  fetchProjects()
+})
+
 </script>
 
 <style scoped>
