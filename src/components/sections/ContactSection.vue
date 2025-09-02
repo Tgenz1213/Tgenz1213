@@ -1,38 +1,38 @@
 <template>
-  <section id="contact">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p>I'm currently open to new opportunities and collaborations. Feel free to reach out.</p>
-      <div class="contact-links">
-        <a
-          v-for="link in contactLinks"
-          :key="link.name"
-          :href="link.url"
-          class="contact-card"
-          target="_blank"
-          rel="noopener noreferrer"
+  <BaseSection id="contact" centered>
+    <h2>Get In Touch</h2>
+    <p>I'm currently open to new opportunities and collaborations. Feel free to reach out.</p>
+    <div class="contact-links">
+      <a
+        v-for="link in contactLinks"
+        :key="link.name"
+        :href="link.url"
+        class="contact-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="contact-icon"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="contact-icon"
-          >
-            <path :d="link.iconPath" />
-          </svg>
-          <span>{{ link.name }}</span>
-        </a>
-      </div>
+          <path :d="link.iconPath" />
+        </svg>
+        <span>{{ link.name }}</span>
+      </a>
     </div>
-  </section>
+  </BaseSection>
 </template>
 
 <script setup lang="ts">
+import BaseSection from './BaseSection.vue'
+
 const contactLinks = [
   {
     name: 'Email',
@@ -59,12 +59,6 @@ const contactLinks = [
 #contact {
   padding: 80px 0;
   text-align: center;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 #contact p {

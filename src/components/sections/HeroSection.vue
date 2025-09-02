@@ -1,34 +1,36 @@
 <template>
-  <section id="hero">
-    <div class="container">
-      <h1>Hello!</h1>
-      <p>
-        I am Timothy Genz.<br />
-        <span class="typing-effect"
-          >I am a passionate and creative Software Development Engineer.</span
-        >
-      </p>
-      <a href="#projects" class="btn">
-        View My Work
-        <svg
-          class="btn-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="20"
-          viewBox="0 0 24 20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
-    </div>
-  </section>
+  <BaseSection id="hero" custom-class="">
+    <h1>Hello!</h1>
+    <p>
+      I am Timothy Genz.<br />
+      <span class="typing-effect"
+        >I am a passionate and creative Software Development Engineer.</span
+      >
+    </p>
+    <a href="#projects" class="btn">
+      View My Work
+      <svg
+        class="btn-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="20"
+        viewBox="0 0 24 20"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+  </BaseSection>
 </template>
+
+<script setup lang="ts">
+import BaseSection from './BaseSection.vue'
+</script>
 
 <style scoped>
 #hero {
