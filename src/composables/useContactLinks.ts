@@ -23,6 +23,6 @@ export const useContactLinks = () => {
   ])
 
   return {
-    contactLinks
+    contactLinks,
   }
 }
