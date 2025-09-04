@@ -18,7 +18,6 @@ const { projects, fetchProjects } = useProjects()
 onMounted(() => {
   fetchProjects()
 })
-
 </script>
 
 <style scoped>
