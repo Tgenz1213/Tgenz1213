@@ -1,3 +1,1 @@
-yarn test:unit
-yarn lint
-yarn format
+yarn lint-staged
