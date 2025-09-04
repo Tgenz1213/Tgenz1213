@@ -1,11 +1,15 @@
 <template>
   <div class="home-wrapper">
     <div v-bind="$attrs">
-      <HeroSection :disable-fade-in="true" />
-      <AboutSection />
-      <ProjectsSection />
-      <ShowcaseSection />
-      <ContactSection />
+      <div class="home-wrapper">
+        <div v-bind="$attrs">
+          <HeroSection :disable-fade-in="true" />
+          <AboutSection />
+          <ProjectsSection />
+          <ShowcaseSection />
+          <ContactSection />
+        </div>
+      </div>
     </div>
   </div>
 </template>
