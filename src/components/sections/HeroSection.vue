@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="hero" custom-class="">
+  <BaseSection id="hero" custom-class="" disable-fade-in>
     <h1>Hello!</h1>
     <p>
       I am Timothy Genz.<br />
