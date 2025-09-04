@@ -6,3 +6,17 @@ export interface Project {
   link: string
   tags?: string[]
 }
+
+export interface StatusItem {
+  label: string
+  value: string
+  icon: string
+}
+
+export interface ShowcaseEntry {
+  id: string
+  title: string
+  description?: string
+  techs: string[]
+  href?: string
+}

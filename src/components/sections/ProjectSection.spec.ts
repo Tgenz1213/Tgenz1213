@@ -1,39 +1,22 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import ProjectsSection from './ProjectsSection.vue'
 import ProjectCard from '../ProjectCard.vue'
-import type { Project } from '../../types'
+import { ref } from 'vue'
+
+const mockProjects = [
+  { id: 1, title: 'Project 1', description: 'Desc 1', image: '', link: '' },
+  { id: 2, title: 'Project 2', description: 'Desc 2', image: '', link: '' },
+]
+
+vi.mock('@/composables/useProjects', () => ({
+  useProjects: () => ({
+    projects: ref(mockProjects),
+    fetchProjects: vi.fn(),
+  }),
+}))
 
 describe('ProjectsSection', () => {
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: 'Portfolio Website',
-      description:
-        'A responsive personal portfolio built with Vue.js and TypeScript, showcasing my skills and projects.',
-      image: 'vue_project_screen.png',
-      link: 'https://github.com/Tgenz1213/Tgenz1213',
-      tags: ['Vue.js', 'TypeScript', 'CSS'],
-    },
-    {
-      id: 2,
-      title: 'Weather App',
-      description:
-        'A React front end with Go backend that fetches weather data from the weather.gov API and caches the data with Redis.',
-      image: 'weather_screen.png',
-      link: 'https://github.com/Tgenz1213/weather',
-      tags: ['Node.js', 'React', 'Go', 'API'],
-    },
-    {
-      id: 3,
-      title: 'ML Maze Runner',
-      description: 'An ML model that solves the Treasure Hunt game.',
-      image: 'Treasure_Hunt_Game_map.png',
-      link: 'https://github.com/Tgenz1213/maze-rl-agent/blob/main/Week_7/TreasureHuntGame/Genz_Timothy_ProjectTwo.ipynb',
-      tags: ['Python', 'AI', 'ML'],
-    },
-  ]
-
   const wrapper = mount(ProjectsSection, {
     global: {
       stubs: {
@@ -46,16 +29,16 @@ describe('ProjectsSection', () => {
     expect(wrapper.find('h2').text()).toBe('My Projects')
   })
 
-  it('renders one ProjectCard component for each project', () => {
+  it('renders one ProjectCard component for each project', async () => {
     const renderedCards = wrapper.findAllComponents(ProjectCard)
-    expect(renderedCards.length).toBe(projects.length)
+    expect(renderedCards.length).toBe(mockProjects.length)
   })
 
-  it('passes the correct project data as a prop to each ProjectCard', () => {
+  it('passes the correct project data as a prop to each ProjectCard', async () => {
     const renderedCards = wrapper.findAllComponents(ProjectCard)
 
     renderedCards.forEach((cardWrapper, index) => {
-      expect(cardWrapper.props('project')).toEqual(projects[index])
+      expect(cardWrapper.props('project')).toEqual(mockProjects[index])
     })
   })
 })

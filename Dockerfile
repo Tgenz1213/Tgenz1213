@@ -9,7 +9,7 @@ FROM nginx:alpine
 RUN rm /etc/nginx/conf.d/default.conf \
     && rm -rf /usr/share/nginx/html/*
 
-COPY security/nginx.conf /etc/nginx/nginx.conf
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
 RUN chown -R nginx:nginx /var/cache/nginx
 COPY \
     --from=builder \
@@ -30,10 +30,5 @@ HEALTHCHECK \
         --tries=1 \
         --spider \
         http://localhost:8080/ || exit 1
-    CMD \
-        wget \
-        --quiet \
-        --tries=1 \
-        --spider \
-        http://localhost:8080/ || exit 1
+        
 CMD ["nginx", "-g", "daemon off;"]

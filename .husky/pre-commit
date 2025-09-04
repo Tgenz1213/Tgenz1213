@@ -1,2 +1,3 @@
 yarn test:unit
 yarn lint
+yarn format

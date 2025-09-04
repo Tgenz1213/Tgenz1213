@@ -1,70 +1,46 @@
 <template>
-  <section id="contact">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p>I'm currently open to new opportunities and collaborations. Feel free to reach out.</p>
-      <div class="contact-links">
-        <a
-          v-for="link in contactLinks"
-          :key="link.name"
-          :href="link.url"
-          class="contact-card"
-          target="_blank"
-          rel="noopener noreferrer"
+  <BaseSection id="contact" centered>
+    <h2>Get In Touch</h2>
+    <p>I'm currently open to new opportunities and collaborations. Feel free to reach out.</p>
+    <div class="contact-links">
+      <a
+        v-for="link in contactLinks"
+        :key="link.name"
+        :href="link.url"
+        class="contact-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="contact-icon"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="contact-icon"
-          >
-            <path :d="link.iconPath" />
-          </svg>
-          <span>{{ link.name }}</span>
-        </a>
-      </div>
+          <path :d="link.iconPath" />
+        </svg>
+        <span>{{ link.name }}</span>
+      </a>
     </div>
-  </section>
+  </BaseSection>
 </template>
 
 <script setup lang="ts">
-const contactLinks = [
-  {
-    name: 'Email',
-    url: 'mailto:timothy.j.genz@gmail.com',
-    iconPath:
-      'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22 6l-10 7L2 6',
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://linkedin.com/in/timothy-genz',
-    iconPath:
-      'M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z M2 9h4v12H2z M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z',
-  },
-  {
-    name: 'GitHub',
-    url: 'https://github.com/tgenz1213',
-    iconPath:
-      'M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22',
-  },
-]
+import BaseSection from './BaseSection.vue'
+import { useContactLinks } from '@/composables/useContactLinks'
+
+const { contactLinks } = useContactLinks()
 </script>
 
 <style scoped>
 #contact {
   padding: 80px 0;
   text-align: center;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 #contact p {
