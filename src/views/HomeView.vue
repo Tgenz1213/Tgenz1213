@@ -1,8 +1,12 @@
 <template>
-  <HeroSection />
-  <AboutSection />
-  <ProjectsSection />
-  <ContactSection />
+  <div class="home-wrapper">
+    <div v-bind="$attrs">
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
