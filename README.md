@@ -39,7 +39,7 @@
 ### About Me
 
 <p>
-  Call me Tim! I am a father, former Marine, and am now a Software Engineer! I enjoy learning new things and trying out my new skills. 
+  Call me Tim! I am a former Marine and am now a Software Engineer! I enjoy learning new things and trying out my new skills. 
 
   My favorite technology I've learned recently is Vue. Check out [my website](https://tgenz1213.me) as an example of what I can do with something new!
 </p>
