@@ -1,11 +1,12 @@
 <template>
   <BaseSection id="hero" custom-class="" disable-fade-in>
     <h1>Hello!</h1>
+    <p>I am Timothy Genz.</p>
     <p>
-      I am Timothy Genz.<br />
-      <span class="typing-effect"
-        >I am a passionate and creative Software Development Engineer.</span
-      >
+      <span class="typing-wrapper">
+        <span class="typing-effect">{{ typedText }}</span
+        ><span v-if="showCursor" class="cursor">|</span>
+      </span>
     </p>
     <a href="#projects" class="btn">
       View My Work
@@ -30,6 +31,31 @@
 
 <script setup lang="ts">
 import BaseSection from './BaseSection.vue'
+import { ref, onMounted } from 'vue'
+
+const typedText = ref('')
+const fullText = 'I am a passionate and creative Software Development Engineer.'
+const showCursor = ref(true)
+let charIndex = 0
+
+const typeCharacter = () => {
+  if (charIndex < fullText.length) {
+    typedText.value += fullText.charAt(charIndex)
+    charIndex++
+    const randomSpeed = Math.random() * (80 - 30) + 30 // Random speed between 30ms and 80ms
+    setTimeout(typeCharacter, randomSpeed)
+  } else {
+    setInterval(() => {
+      showCursor.value = !showCursor.value
+    }, 500)
+  }
+}
+
+onMounted(() => {
+  setTimeout(() => {
+    typeCharacter()
+  }, 1000) // 1s delay
+})
 </script>
 
 <style scoped>
@@ -87,5 +113,28 @@ import BaseSection from './BaseSection.vue'
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0 15px 35px rgba(0, 123, 255, 0.2);
+}
+
+.typing-wrapper {
+  position: relative;
+  display: inline-block;
+  min-height: 1.25rem; /* Ensure consistent height for the typing line */
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #e0e0e0;
+  }
 }
 </style>
