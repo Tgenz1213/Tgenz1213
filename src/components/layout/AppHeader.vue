@@ -15,6 +15,7 @@
 const navLinks = [
   { name: 'About', path: '#about' },
   { name: 'Projects', path: '#projects' },
+  { name: 'Showcase', path: '#showcase' },
   { name: 'Contact', path: '#contact' },
 ]
 </script>

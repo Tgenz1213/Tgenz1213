@@ -8,6 +8,7 @@ describe('AppHeader', () => {
     expect(wrapper.text()).toContain('Tim')
     expect(wrapper.text()).toContain('About')
     expect(wrapper.text()).toContain('Projects')
+    expect(wrapper.text()).toContain('Showcase')
     expect(wrapper.text()).toContain('Contact')
   })
 })
