@@ -1,4 +1,6 @@
 name: Vue CI Pipeline
+permissions:
+  contents: read
 
 on:
   push:
