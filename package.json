@@ -8,9 +8,12 @@
   ],
   "scripts": {
     "dev": "yarn workspace client dev",
+    "build": "yarn workspaces foreach -Apt run build",
     "lint": "yarn workspaces foreach -Apt run lint",
     "test": "yarn workspaces foreach -Apt run test",
+    "test:unit": "yarn workspaces foreach -Apt run test",
     "format": "yarn prettier --write .",
+    "format:check": "yarn prettier --check .",
     "prepare": "husky"
   },
   "devDependencies": {
