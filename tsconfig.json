@@ -4,25 +4,12 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "strict": true,
-    "noEmit": true,
-    "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@portfolio/config/*": ["packages/config/*"],
+      "@portfolio/types/*": ["packages/types/*"]
     }
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
-  ]
+  }
 }

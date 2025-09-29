@@ -17,12 +17,10 @@ export default tseslint.config(
       parserOptions: {
         parser: tseslint.parser,
         project: true,
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: process.cwd(),
         extraFileExtensions: ['.vue'],
       },
-      globals: {
-        ...globals.browser,
-      },
+      globals: { ...globals.browser },
     },
   },
   skipFormatting,
