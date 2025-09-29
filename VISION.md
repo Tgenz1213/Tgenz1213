@@ -6,15 +6,16 @@
 
 ## ## Core Technology
 
-* **Framework:** Vue 3 with Vite and TypeScript.
-* **Development Environment:** VS Code, Git, Yarn, ESLint, and Prettier.
-* **Containerization:** Docker.
+- **Framework:** Vue 3 with Vite and TypeScript.
+- **Development Environment:** VS Code, Git, Yarn, ESLint, and Prettier.
+- **Containerization:** Docker.
 
 ---
 
 ## ## Application Content
 
 The site will be a responsive SPA with the following sections:
+
 1.  **Hero/Introduction:** A concise statement about who I am and what I do.
 2.  **Projects:** Showcase of 3-5 key projects, each with a clear description, technologies used, visuals, and links to the live demo and source code.
 3.  **Skills:** A clear, categorized list of technical skills.
@@ -58,7 +59,10 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     id: 'Push Docker Image'
     args:
-      ['push', 'us-central1-docker.pkg.dev/<YOUR_GCP_PROJECT_ID>/<YOUR_REPO_NAME>/<YOUR_SERVICE_NAME>:$COMMIT_SHA']
+      [
+        'push',
+        'us-central1-docker.pkg.dev/<YOUR_GCP_PROJECT_ID>/<YOUR_REPO_NAME>/<YOUR_SERVICE_NAME>:$COMMIT_SHA',
+      ]
 
   - name: 'gcr.io/[google.com/cloudsdktool/cloud-sdk](https://google.com/cloudsdktool/cloud-sdk)'
     id: 'Deploy to Cloud Run'
@@ -74,3 +78,4 @@ steps:
 
 images:
   - 'us-central1-docker.pkg.dev/<YOUR_GCP_PROJECT_ID>/<YOUR_REPO_NAME>/<YOUR_SERVICE_NAME>:$COMMIT_SHA'
+```

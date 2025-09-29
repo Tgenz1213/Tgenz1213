@@ -14,15 +14,15 @@ Please send an email to **timothy.j.genz@gmail.com** with "Security Vulnerabilit
 
 In your report, please include:
 
-* **A clear description** of the vulnerability.
-* **The repository and file(s)** affected.
-* **Steps to reproduce** the vulnerability, including any proof-of-concept code, screenshots, or videos.
-* **The potential impact** of the vulnerability.
+- **A clear description** of the vulnerability.
+- **The repository and file(s)** affected.
+- **Steps to reproduce** the vulnerability, including any proof-of-concept code, screenshots, or videos.
+- **The potential impact** of the vulnerability.
 
 ### What to Expect
 
-* I will do my best to acknowledge your report within **48 hours**.
-* You will receive an update on the status of the vulnerability within **7 days**.
-* I will notify you when the vulnerability has been fixed. I am happy to credit you for the discovery, unless you prefer to remain anonymous.
+- I will do my best to acknowledge your report within **48 hours**.
+- You will receive an update on the status of the vulnerability within **7 days**.
+- I will notify you when the vulnerability has been fixed. I am happy to credit you for the discovery, unless you prefer to remain anonymous.
 
 I kindly ask that you follow the principles of responsible disclosure and not disclose the vulnerability publicly until a fix has been released. Thank you for helping to keep my projects secure!

@@ -3,6 +3,7 @@
 # Hello, I'm Tim Genz 👋
 
 ### Master's Student in Computer Science (AI)
+
 ### Software Engineer
 
 ---
