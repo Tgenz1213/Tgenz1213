@@ -1,7 +1,7 @@
 FROM node:22-alpine AS builder
 WORKDIR /app
-COPY --chown=node:node package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+COPY --chown=node:node package.json ./
+RUN yarn install
 COPY --chown=node:node . .
 RUN yarn build
 
