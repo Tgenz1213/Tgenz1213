@@ -1,5 +1,7 @@
 services:
   client:
-    build: ./apps/client
+    build:
+      context: .
+      dockerfile: ./apps/client/Dockerfile
     ports:
       - '8080:8080'
