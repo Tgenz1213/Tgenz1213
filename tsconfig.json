@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/config"
+    },
+    {
+      "path": "./packages/types"
+    },
+    {
+      "path": "./apps/client"
+    }
+  ]
+}

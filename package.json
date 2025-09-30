@@ -6,6 +6,9 @@
     "apps/*",
     "packages/*"
   ],
+  "exports": {
+    "./tsconfig": "./tsconfig.base.json"
+  },
   "scripts": {
     "dev": "yarn workspace client dev",
     "build": "yarn workspaces foreach -Apt run build",
