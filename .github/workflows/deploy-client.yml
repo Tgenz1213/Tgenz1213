@@ -33,7 +33,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - '"main"'
+      - 'main'
     paths:
       - 'apps/client/**'
 
@@ -53,7 +53,7 @@ jobs:
 
     steps:
       - name: 'Checkout'
-        uses: 'actions/checkout@ff7abcd0c3c05ccf6adc123a8cd1fd4fb30fb493' # actions/checkout@v4
+        uses: 'actions/checkout@v4'
 
       # Configure Workload Identity Federation and generate an access token.
       #
@@ -61,7 +61,7 @@ jobs:
       # including authenticating via a JSON credentials file.
       - id: 'auth'
         name: 'Authenticate to Google Cloud'
-        uses: 'google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093' # google-github-actions/auth@v2
+        uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
 
@@ -69,7 +69,7 @@ jobs:
       #
       # If you already have a container image, you can omit these steps.
       - name: 'Docker Auth'
-        uses: 'docker/login-action@5e57cd118135c172c3672efd75eb46360885c0ef' # docker/login-action@v3
+        uses: 'docker/login-action@v3'
         with:
           username: 'oauth2accesstoken'
           password: '${{ steps.auth.outputs.auth_token }}'
@@ -82,7 +82,7 @@ jobs:
           docker push "${DOCKER_TAG}"
         # END - Docker auth and build
       - name: 'Deploy to Cloud Run'
-        uses: 'google-github-actions/deploy-cloudrun@2028e2d7d30a78c6910e0632e48dd561b064884d' # google-github-actions/deploy-cloudrun@v2
+        uses: 'google-github-actions/deploy-cloudrun@v2'
         with:
           service: '${{ env.SERVICE }}'
           region: '${{ env.REGION }}'
