@@ -1,11 +1,14 @@
 {
   "name": "tgenz1213-portfolio",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
+  "exports": {
+    "./tsconfig": "./tsconfig.base.json"
+  },
   "scripts": {
     "dev": "yarn workspace client dev",
     "build": "yarn workspaces foreach -Apt run build",
