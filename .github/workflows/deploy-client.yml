@@ -49,11 +49,8 @@ jobs:
           gcloud config list
 
       # BEGIN - Docker auth and build
-      - name: 'Set up Cloud SDK and Docker Auth'
-        uses: 'google-github-actions/setup-gcloud@v2'
-        with:
-          project_id: ${{ env.PROJECT_ID }}
-          setup_docker: true
+      - name: 'Configure Docker for Artifact Registry'
+        run: gcloud auth configure-docker ${{ env.REGION }}-docker.pkg.dev --project ${{ env.PROJECT_ID }} --quiet
 
 #      - name: Check GCP authentication
 #        run: |
