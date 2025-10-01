@@ -42,6 +42,11 @@ jobs:
           workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
           service_account: '${{ env.SERVICE_ACCOUNT }}'
 
+      - name: Check active account and project
+        run: |
+          gcloud auth list
+          gcloud config list
+
       # BEGIN - Docker auth and build
       - name: 'Docker Auth'
         uses: 'docker/login-action@v3'
