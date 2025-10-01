@@ -56,11 +56,11 @@ jobs:
           password: '${{ steps.auth.outputs.auth_token }}'
           registry: '${{ env.REGION }}-docker.pkg.dev'
 
-      - name: Check GCP authentication
-        run: |
-          gcloud auth list
-          gcloud config list
-          gcloud artifacts repositories describe my-portfolio-app --location=us-east1 --project=my-portfolio-prod-473214
+#      - name: Check GCP authentication
+#        run: |
+#          gcloud auth list
+#          gcloud config list
+#          gcloud artifacts repositories describe my-portfolio-app --location=us-east1 --project=my-portfolio-prod-473214
 
       - name: 'Build and Push Container'
         run: |-
