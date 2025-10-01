@@ -16,7 +16,7 @@ env:
   PROJECT_ID: 'my-portfolio-prod-473214'
   REGION: 'us-east1'
   SERVICE: 'my-portfolio-app'
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/453047639463/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/453047639463/locations/global/workloadIdentityPools/github-actions-pool/providers/gh-provider-2025'
   SERVICE_ACCOUNT: 'github-actions-deployer@my-portfolio-prod-473214.iam.gserviceaccount.com'
 
 jobs:
