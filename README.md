@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hello, I'm Tim Genz 👋
+# Hello, I'm Timothy Genz 👋
 
 ### Master's Student in Computer Science (AI)
 
