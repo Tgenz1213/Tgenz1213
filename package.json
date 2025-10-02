@@ -27,6 +27,9 @@
     "prettier": "^3.6.2",
     "workspace": "^0.0.1-preview.2"
   },
+  "resolutions": {
+    "qs": "^6.2.4"
+  },
   "lint-staged": {
     "*.{js,vue,ts,json,md}": "yarn prettier --write",
     "apps/client/**/*.{js,vue,ts}": "yarn workspace client eslint --fix",

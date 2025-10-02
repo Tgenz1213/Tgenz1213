@@ -4679,10 +4679,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:0.6.6":
-  version: 0.6.6
-  resolution: "qs@npm:0.6.6"
-  checksum: 10c0/1a441426c09a4d42dc613dbcd2a28f51005a9fabd2062b5e9f72515d85fcfdcfbf0e778a430ba98cbc21636b59695f03c4220b7c123745b394440c5d7fd86f0b
+"qs@npm:^6.2.4":
+  version: 6.14.0
+  resolution: "qs@npm:6.14.0"
+  dependencies:
+    side-channel: "npm:^1.1.0"
+  checksum: 10c0/8ea5d91bf34f440598ee389d4a7d95820e3b837d3fd9f433871f7924801becaa0cd3b3b4628d49a7784d06a8aea9bc4554d2b6d8d584e2d221dc06238a42909c
   languageName: node
   linkType: hard
 
