@@ -46,8 +46,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:16.2.3"],\
           ["prettier", "npm:3.6.2"],\
-          ["tgenz1213-portfolio", "workspace:."],\
-          ["workspace", "npm:0.0.1-preview.2"]\
+          ["tgenz1213-portfolio", "workspace:."]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -6208,8 +6207,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:16.2.3"],\
           ["prettier", "npm:3.6.2"],\
-          ["tgenz1213-portfolio", "workspace:."],\
-          ["workspace", "npm:0.0.1-preview.2"]\
+          ["tgenz1213-portfolio", "workspace:."]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -7066,15 +7064,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../Users/timot/AppData/Local/Yarn/Berry/cache/word-wrap-npm-1.2.5-42d00c4b09-10c0.zip/node_modules/word-wrap/",\
         "packageDependencies": [\
           ["word-wrap", "npm:1.2.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["workspace", [\
-      ["npm:0.0.1-preview.2", {\
-        "packageLocation": "../../../../Users/timot/AppData/Local/Yarn/Berry/cache/workspace-npm-0.0.1-preview.2-d01781bdc6-10c0.zip/node_modules/workspace/",\
-        "packageDependencies": [\
-          ["workspace", "npm:0.0.1-preview.2"]\
         ],\
         "linkType": "HARD"\
       }]\
