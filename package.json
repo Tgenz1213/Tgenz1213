@@ -23,12 +23,8 @@
     "@types/vue": "^2.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.1",
-    "packages": "^0.0.8",
     "prettier": "^3.6.2",
     "workspace": "^0.0.1-preview.2"
-  },
-  "resolutions": {
-    "qs": "^6.2.4"
   },
   "lint-staged": {
     "*.{js,vue,ts,json,md}": "yarn prettier --write",
