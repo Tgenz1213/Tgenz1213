@@ -886,16 +886,16 @@ __metadata:
 "@portfolio/config@workspace:*, @portfolio/config@workspace:packages/config":
   version: 0.0.0-use.local
   resolution: "@portfolio/config@workspace:packages/config"
-  peerDependencies:
-    "@eslint/js": ^9.36.0
-    "@vue/eslint-config-prettier": ^10.2.0
-    eslint: ^9.33.0
-    eslint-plugin-vue: ^10.2.0
-    globals: ^16.4.0
-    prettier: 3.6.2
-    typescript: ^5.9.2
-    typescript-eslint: ^8.39.1
-    vue-eslint-parser: ^10.2.0
+  dependencies:
+    "@eslint/js": "npm:^9.36.0"
+    "@vue/eslint-config-prettier": "npm:^10.2.0"
+    eslint: "npm:^9.33.0"
+    eslint-plugin-vue: "npm:^10.2.0"
+    globals: "npm:^16.4.0"
+    prettier: "npm:^3.6.2"
+    typescript: "npm:^5.9.2"
+    typescript-eslint: "npm:^8.39.1"
+    vue-eslint-parser: "npm:^10.2.0"
   languageName: unknown
   linkType: soft
 
@@ -2048,21 +2048,15 @@ __metadata:
     "@vitejs/plugin-vue": "npm:^6.0.1"
     "@vitest/eslint-plugin": "npm:^1.3.13"
     "@vue/compiler-dom": "npm:^3.5.22"
-    "@vue/eslint-config-prettier": "npm:^10.2.0"
     "@vue/server-renderer": "npm:^3.5.22"
     "@vue/test-utils": "npm:^2.4.6"
     eslint: "npm:^9.33.0"
-    eslint-plugin-vue: "npm:^10.5.0"
-    globals: "npm:^16.4.0"
     jsdom: "npm:^27.0.0"
-    prettier: "npm:^3.6.2"
-    typescript: "npm:^5.9.2"
-    typescript-eslint: "npm:^8.39.1"
+    typescript: "npm:^5.9.3"
     vite: "npm:^7.1.7"
     vite-plugin-vue-devtools: "npm:^8.0.2"
     vitest: "npm:^3.2.4"
     vue: "npm:^3.5.17"
-    vue-eslint-parser: "npm:^10.2.0"
     vue-router: "npm:^4.5.1"
   languageName: unknown
   linkType: soft
@@ -2613,7 +2607,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^10.5.0":
+"eslint-plugin-vue@npm:^10.2.0":
   version: 10.5.0
   resolution: "eslint-plugin-vue@npm:10.5.0"
   dependencies:
@@ -5167,7 +5161,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.9.2":
+"typescript@npm:^5.9.2, typescript@npm:^5.9.3":
   version: 5.9.3
   resolution: "typescript@npm:5.9.3"
   bin:
@@ -5177,7 +5171,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.9.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.9.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.9.3#optional!builtin<compat/typescript>":
   version: 5.9.3
   resolution: "typescript@patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"
   bin:
