@@ -1182,15 +1182,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/vue@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@types/vue@npm:2.0.0"
-  dependencies:
-    vue: "npm:*"
-  checksum: 10c0/847df06a6f27101cb8a483e297818267e69c84c179b7a571965cc5e947822c5eaa25abfb5e18ac226e5a95f99c0deb45ad4487d6fecb8c0e7b15e4674efcc2f4
-  languageName: node
-  linkType: hard
-
 "@typescript-eslint/eslint-plugin@npm:8.45.0":
   version: 8.45.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.45.0"
@@ -5040,7 +5031,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tgenz1213-portfolio@workspace:."
   dependencies:
-    "@types/vue": "npm:^2.0.0"
     husky: "npm:^9.1.7"
     lint-staged: "npm:^16.2.1"
     prettier: "npm:^3.6.2"
@@ -5509,7 +5499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:*, vue@npm:^3.5.17":
+"vue@npm:^3.5.17":
   version: 3.5.22
   resolution: "vue@npm:3.5.22"
   dependencies:

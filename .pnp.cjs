@@ -43,7 +43,6 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@types/vue", "npm:2.0.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:16.2.3"],\
           ["prettier", "npm:3.6.2"],\
@@ -1710,16 +1709,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@types/vue", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../../Users/timot/AppData/Local/Yarn/Berry/cache/@types-vue-npm-2.0.0-f610479937-10c0.zip/node_modules/@types/vue/",\
-        "packageDependencies": [\
-          ["@types/vue", "npm:2.0.0"],\
-          ["vue", "virtual:f6104799375eba80f9bf7e149c7d7e70576a91568c87af41ed6588e1073705264835f063695ab93741350cbf9e7654a2eea3d9dd6bd90361b169ea8fe2ca0439#npm:3.5.22"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@typescript-eslint/eslint-plugin", [\
       ["npm:8.45.0", {\
         "packageLocation": "../../../../Users/timot/AppData/Local/Yarn/Berry/cache/@typescript-eslint-eslint-plugin-npm-8.45.0-92bb8b7596-10c0.zip/node_modules/@typescript-eslint/eslint-plugin/",\
@@ -2381,21 +2370,6 @@ const RAW_RUNTIME_STATE =
           ["@vue/server-renderer", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.22"],\
           ["@vue/shared", "npm:3.5.22"],\
           ["vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.22"]\
-        ],\
-        "packagePeers": [\
-          "@types/vue",\
-          "vue"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:c82d8cf28c96ebea9779b93f8df15317f6e9a6766d81938e0bd12c6cea60499070e17c852d72e71d241075fa088d4d91ecc809b075a2461ee6b2da4f6160ea1f#npm:3.5.22", {\
-        "packageLocation": "./.yarn/__virtual__/@vue-server-renderer-virtual-c9570f1410/5/Users/timot/AppData/Local/Yarn/Berry/cache/@vue-server-renderer-npm-3.5.22-69fc022ed9-10c0.zip/node_modules/@vue/server-renderer/",\
-        "packageDependencies": [\
-          ["@types/vue", null],\
-          ["@vue/compiler-ssr", "npm:3.5.22"],\
-          ["@vue/server-renderer", "virtual:c82d8cf28c96ebea9779b93f8df15317f6e9a6766d81938e0bd12c6cea60499070e17c852d72e71d241075fa088d4d91ecc809b075a2461ee6b2da4f6160ea1f#npm:3.5.22"],\
-          ["@vue/shared", "npm:3.5.22"],\
-          ["vue", "virtual:f6104799375eba80f9bf7e149c7d7e70576a91568c87af41ed6588e1073705264835f063695ab93741350cbf9e7654a2eea3d9dd6bd90361b169ea8fe2ca0439#npm:3.5.22"]\
         ],\
         "packagePeers": [\
           "@types/vue",\
@@ -6231,7 +6205,6 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@types/vue", "npm:2.0.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:16.2.3"],\
           ["prettier", "npm:3.6.2"],\
@@ -6899,24 +6872,6 @@ const RAW_RUNTIME_STATE =
           ["@vue/shared", "npm:3.5.22"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.22"]\
-        ],\
-        "packagePeers": [\
-          "@types/typescript",\
-          "typescript"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:f6104799375eba80f9bf7e149c7d7e70576a91568c87af41ed6588e1073705264835f063695ab93741350cbf9e7654a2eea3d9dd6bd90361b169ea8fe2ca0439#npm:3.5.22", {\
-        "packageLocation": "./.yarn/__virtual__/vue-virtual-c82d8cf28c/5/Users/timot/AppData/Local/Yarn/Berry/cache/vue-npm-3.5.22-1d8ef6c45f-10c0.zip/node_modules/vue/",\
-        "packageDependencies": [\
-          ["@types/typescript", null],\
-          ["@vue/compiler-dom", "npm:3.5.22"],\
-          ["@vue/compiler-sfc", "npm:3.5.22"],\
-          ["@vue/runtime-dom", "npm:3.5.22"],\
-          ["@vue/server-renderer", "virtual:c82d8cf28c96ebea9779b93f8df15317f6e9a6766d81938e0bd12c6cea60499070e17c852d72e71d241075fa088d4d91ecc809b075a2461ee6b2da4f6160ea1f#npm:3.5.22"],\
-          ["@vue/shared", "npm:3.5.22"],\
-          ["typescript", null],\
-          ["vue", "virtual:f6104799375eba80f9bf7e149c7d7e70576a91568c87af41ed6588e1073705264835f063695ab93741350cbf9e7654a2eea3d9dd6bd90361b169ea8fe2ca0439#npm:3.5.22"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
