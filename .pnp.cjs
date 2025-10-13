@@ -1654,10 +1654,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:24.7.0", {\
-        "packageLocation": "../../.yarn/berry/cache/@types-node-npm-24.7.0-fa253cad8d-10c0.zip/node_modules/@types/node/",\
+      ["npm:24.7.2", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-node-npm-24.7.2-c42e5df6ef-10c0.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:24.7.0"],\
+          ["@types/node", "npm:24.7.2"],\
           ["undici-types", "npm:7.14.0"]\
         ],\
         "linkType": "HARD"\
@@ -2989,7 +2989,7 @@ const RAW_RUNTIME_STATE =
           ["@portfolio/types", "workspace:packages/types"],\
           ["@testing-library/jest-dom", "npm:6.9.1"],\
           ["@testing-library/vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:8.1.0"],\
-          ["@types/node", "npm:24.7.0"],\
+          ["@types/node", "npm:24.7.2"],\
           ["@types/testing-library__vue", "npm:5.3.0"],\
           ["@vitejs/plugin-vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.1"],\
           ["@vitest/eslint-plugin", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:1.3.16"],\
@@ -6588,7 +6588,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jiti", null],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:24.7.0"],\
+          ["@types/node", "npm:24.7.2"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
@@ -6888,7 +6888,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:24.7.0"],\
+          ["@types/node", "npm:24.7.2"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
