@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:16.2.3"],\
+          ["lint-staged", "npm:16.2.4"],\
           ["prettier", "npm:3.6.2"],\
           ["tgenz1213-portfolio", "workspace:."]\
         ],\
@@ -4880,14 +4880,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.2.3", {\
-        "packageLocation": "../../.yarn/berry/cache/lint-staged-npm-16.2.3-d2e7d68634-10c0.zip/node_modules/lint-staged/",\
+      ["npm:16.2.4", {\
+        "packageLocation": "../../.yarn/berry/cache/lint-staged-npm-16.2.4-9199f5ada5-10c0.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.1"],\
-          ["lint-staged", "npm:16.2.3"],\
+          ["lint-staged", "npm:16.2.4"],\
           ["listr2", "npm:9.0.4"],\
           ["micromatch", "npm:4.0.8"],\
-          ["nano-spawn", "npm:1.0.3"],\
+          ["nano-spawn", "npm:2.0.0"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.2"],\
           ["yaml", "npm:2.8.1"]\
@@ -5205,10 +5205,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nano-spawn", [\
-      ["npm:1.0.3", {\
-        "packageLocation": "../../.yarn/berry/cache/nano-spawn-npm-1.0.3-820da1ed9f-10c0.zip/node_modules/nano-spawn/",\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/nano-spawn-npm-2.0.0-96abe72805-10c0.zip/node_modules/nano-spawn/",\
         "packageDependencies": [\
-          ["nano-spawn", "npm:1.0.3"]\
+          ["nano-spawn", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6290,7 +6290,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:16.2.3"],\
+          ["lint-staged", "npm:16.2.4"],\
           ["prettier", "npm:3.6.2"],\
           ["tgenz1213-portfolio", "workspace:."]\
         ],\
