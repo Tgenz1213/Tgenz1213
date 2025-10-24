@@ -1022,6 +1022,13 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.37.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:9.38.0", {\
+        "packageLocation": "../../.yarn/berry/cache/@eslint-js-npm-9.38.0-0be8cbf503-10c0.zip/node_modules/@eslint/js/",\
+        "packageDependencies": [\
+          ["@eslint/js", "npm:9.38.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@eslint/object-schema", [\
@@ -1262,7 +1269,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:packages/config", {\
         "packageLocation": "./packages/config/",\
         "packageDependencies": [\
-          ["@eslint/js", "npm:9.37.0"],\
+          ["@eslint/js", "npm:9.38.0"],\
           ["@portfolio/config", "workspace:packages/config"],\
           ["@vue/eslint-config-prettier", "virtual:5a96eb3c905268f88442c7d53af196dc45d1d7afe5c470bf08f15c7cadc6b88abe9d96c84899a11243f08b1adc949be6bab073a6f45514b2ae46f11ef0624edb#npm:10.2.0"],\
           ["eslint", "virtual:5a96eb3c905268f88442c7d53af196dc45d1d7afe5c470bf08f15c7cadc6b88abe9d96c84899a11243f08b1adc949be6bab073a6f45514b2ae46f11ef0624edb#npm:9.37.0"],\
@@ -2984,7 +2991,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:apps/client", {\
         "packageLocation": "./apps/client/",\
         "packageDependencies": [\
-          ["@eslint/js", "npm:9.37.0"],\
+          ["@eslint/js", "npm:9.38.0"],\
           ["@portfolio/config", "workspace:packages/config"],\
           ["@portfolio/types", "workspace:packages/types"],\
           ["@testing-library/jest-dom", "npm:6.9.1"],\
