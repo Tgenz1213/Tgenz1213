@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:16.2.4"],\
+          ["lint-staged", "npm:16.2.6"],\
           ["prettier", "npm:3.6.2"],\
           ["tgenz1213-portfolio", "workspace:."]\
         ],\
@@ -4665,12 +4665,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.2.4", {\
-        "packageLocation": "../../.yarn/berry/cache/lint-staged-npm-16.2.4-9199f5ada5-10c0.zip/node_modules/lint-staged/",\
+      ["npm:16.2.6", {\
+        "packageLocation": "../../.yarn/berry/cache/lint-staged-npm-16.2.6-0ee184c358-10c0.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.1"],\
-          ["lint-staged", "npm:16.2.4"],\
-          ["listr2", "npm:9.0.4"],\
+          ["lint-staged", "npm:16.2.6"],\
+          ["listr2", "npm:9.0.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["nano-spawn", "npm:2.0.0"],\
           ["pidtree", "npm:0.6.0"],\
@@ -4681,13 +4681,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["listr2", [\
-      ["npm:9.0.4", {\
-        "packageLocation": "../../.yarn/berry/cache/listr2-npm-9.0.4-fc5d287291-10c0.zip/node_modules/listr2/",\
+      ["npm:9.0.5", {\
+        "packageLocation": "../../.yarn/berry/cache/listr2-npm-9.0.5-8443b39154-10c0.zip/node_modules/listr2/",\
         "packageDependencies": [\
           ["cli-truncate", "npm:5.1.0"],\
           ["colorette", "npm:2.0.20"],\
           ["eventemitter3", "npm:5.0.1"],\
-          ["listr2", "npm:9.0.4"],\
+          ["listr2", "npm:9.0.5"],\
           ["log-update", "npm:6.1.0"],\
           ["rfdc", "npm:1.4.1"],\
           ["wrap-ansi", "npm:9.0.2"]\
@@ -6029,7 +6029,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:16.2.4"],\
+          ["lint-staged", "npm:16.2.6"],\
           ["prettier", "npm:3.6.2"],\
           ["tgenz1213-portfolio", "workspace:."]\
         ],\
