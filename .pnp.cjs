@@ -345,6 +345,13 @@ const RAW_RUNTIME_STATE =
           ["@babel/helper-validator-identifier", "npm:7.27.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:7.28.5", {\
+        "packageLocation": "../../.yarn/berry/cache/@babel-helper-validator-identifier-npm-7.28.5-1953d49d2b-10c0.zip/node_modules/@babel/helper-validator-identifier/",\
+        "packageDependencies": [\
+          ["@babel/helper-validator-identifier", "npm:7.28.5"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@babel/helper-validator-option", [\
@@ -373,6 +380,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@babel/parser", "npm:7.28.4"],\
           ["@babel/types", "npm:7.28.4"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.28.5", {\
+        "packageLocation": "../../.yarn/berry/cache/@babel-parser-npm-7.28.5-f2345a6b62-10c0.zip/node_modules/@babel/parser/",\
+        "packageDependencies": [\
+          ["@babel/parser", "npm:7.28.5"],\
+          ["@babel/types", "npm:7.28.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -588,6 +603,15 @@ const RAW_RUNTIME_STATE =
           ["@babel/helper-string-parser", "npm:7.27.1"],\
           ["@babel/helper-validator-identifier", "npm:7.27.1"],\
           ["@babel/types", "npm:7.28.4"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.28.5", {\
+        "packageLocation": "../../.yarn/berry/cache/@babel-types-npm-7.28.5-582d7cca8a-10c0.zip/node_modules/@babel/types/",\
+        "packageDependencies": [\
+          ["@babel/helper-string-parser", "npm:7.27.1"],\
+          ["@babel/helper-validator-identifier", "npm:7.28.5"],\
+          ["@babel/types", "npm:7.28.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1595,7 +1619,7 @@ const RAW_RUNTIME_STATE =
           ["@types/vue__compiler-dom", null],\
           ["@types/vue__compiler-sfc", null],\
           ["@types/vue__server-renderer", null],\
-          ["@vue/compiler-dom", "npm:3.5.22"],\
+          ["@vue/compiler-dom", "npm:3.5.24"],\
           ["@vue/compiler-sfc", null],\
           ["@vue/server-renderer", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.22"],\
           ["@vue/test-utils", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:2.4.6"],\
@@ -2282,6 +2306,18 @@ const RAW_RUNTIME_STATE =
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.5.24", {\
+        "packageLocation": "../../.yarn/berry/cache/@vue-compiler-core-npm-3.5.24-a64d4838b9-10c0.zip/node_modules/@vue/compiler-core/",\
+        "packageDependencies": [\
+          ["@babel/parser", "npm:7.28.5"],\
+          ["@vue/compiler-core", "npm:3.5.24"],\
+          ["@vue/shared", "npm:3.5.24"],\
+          ["entities", "npm:4.5.0"],\
+          ["estree-walker", "npm:2.0.2"],\
+          ["source-map-js", "npm:1.2.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@vue/compiler-dom", [\
@@ -2291,6 +2327,15 @@ const RAW_RUNTIME_STATE =
           ["@vue/compiler-core", "npm:3.5.22"],\
           ["@vue/compiler-dom", "npm:3.5.22"],\
           ["@vue/shared", "npm:3.5.22"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.5.24", {\
+        "packageLocation": "../../.yarn/berry/cache/@vue-compiler-dom-npm-3.5.24-260dd8e2a5-10c0.zip/node_modules/@vue/compiler-dom/",\
+        "packageDependencies": [\
+          ["@vue/compiler-core", "npm:3.5.24"],\
+          ["@vue/compiler-dom", "npm:3.5.24"],\
+          ["@vue/shared", "npm:3.5.24"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2480,6 +2525,13 @@ const RAW_RUNTIME_STATE =
           ["@vue/shared", "npm:3.5.22"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.5.24", {\
+        "packageLocation": "../../.yarn/berry/cache/@vue-shared-npm-3.5.24-593724e6c9-10c0.zip/node_modules/@vue/shared/",\
+        "packageDependencies": [\
+          ["@vue/shared", "npm:3.5.24"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@vue/test-utils", [\
@@ -2496,7 +2548,7 @@ const RAW_RUNTIME_STATE =
           ["@types/vue", null],\
           ["@types/vue__compiler-dom", null],\
           ["@types/vue__server-renderer", null],\
-          ["@vue/compiler-dom", "npm:3.5.22"],\
+          ["@vue/compiler-dom", "npm:3.5.24"],\
           ["@vue/server-renderer", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.22"],\
           ["@vue/test-utils", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:2.4.6"],\
           ["js-beautify", "npm:1.15.4"],\
@@ -2966,7 +3018,7 @@ const RAW_RUNTIME_STATE =
           ["@types/testing-library__vue", "npm:5.3.0"],\
           ["@vitejs/plugin-vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.1"],\
           ["@vitest/eslint-plugin", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:1.4.0"],\
-          ["@vue/compiler-dom", "npm:3.5.22"],\
+          ["@vue/compiler-dom", "npm:3.5.24"],\
           ["@vue/server-renderer", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.22"],\
           ["@vue/test-utils", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:2.4.6"],\
           ["client", "workspace:apps/client"],\
