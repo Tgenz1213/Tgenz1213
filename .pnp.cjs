@@ -1477,10 +1477,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@rolldown/pluginutils", [\
-      ["npm:1.0.0-beta.29", {\
-        "packageLocation": "../../.yarn/berry/cache/@rolldown-pluginutils-npm-1.0.0-beta.29-900182ad00-10c0.zip/node_modules/@rolldown/pluginutils/",\
+      ["npm:1.0.0-beta.53", {\
+        "packageLocation": "../../.yarn/berry/cache/@rolldown-pluginutils-npm-1.0.0-beta.53-0e2b6fa8ac-10c0.zip/node_modules/@rolldown/pluginutils/",\
         "packageDependencies": [\
-          ["@rolldown/pluginutils", "npm:1.0.0-beta.29"]\
+          ["@rolldown/pluginutils", "npm:1.0.0-beta.53"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2095,20 +2095,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@vitejs/plugin-vue", [\
-      ["npm:6.0.1", {\
-        "packageLocation": "../../.yarn/berry/cache/@vitejs-plugin-vue-npm-6.0.1-c0994bf42d-10c0.zip/node_modules/@vitejs/plugin-vue/",\
+      ["npm:6.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/@vitejs-plugin-vue-npm-6.0.3-5a0355d170-10c0.zip/node_modules/@vitejs/plugin-vue/",\
         "packageDependencies": [\
-          ["@vitejs/plugin-vue", "npm:6.0.1"]\
+          ["@vitejs/plugin-vue", "npm:6.0.3"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.1", {\
-        "packageLocation": "./.yarn/__virtual__/@vitejs-plugin-vue-virtual-28d400bc87/3/.yarn/berry/cache/@vitejs-plugin-vue-npm-6.0.1-c0994bf42d-10c0.zip/node_modules/@vitejs/plugin-vue/",\
+      ["virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.3", {\
+        "packageLocation": "./.yarn/__virtual__/@vitejs-plugin-vue-virtual-8956d719a1/3/.yarn/berry/cache/@vitejs-plugin-vue-npm-6.0.3-5a0355d170-10c0.zip/node_modules/@vitejs/plugin-vue/",\
         "packageDependencies": [\
-          ["@rolldown/pluginutils", "npm:1.0.0-beta.29"],\
+          ["@rolldown/pluginutils", "npm:1.0.0-beta.53"],\
           ["@types/vite", null],\
           ["@types/vue", null],\
-          ["@vitejs/plugin-vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.1"],\
+          ["@vitejs/plugin-vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.3"],\
           ["vite", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:7.3.0"],\
           ["vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.22"]\
         ],\
@@ -3098,7 +3098,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:8.1.0"],\
           ["@types/node", "npm:24.10.1"],\
           ["@types/testing-library__vue", "npm:5.3.0"],\
-          ["@vitejs/plugin-vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.1"],\
+          ["@vitejs/plugin-vue", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:6.0.3"],\
           ["@vitest/eslint-plugin", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:1.6.5"],\
           ["@vue/compiler-dom", "npm:3.5.24"],\
           ["@vue/server-renderer", "virtual:a90340927533309496736c06e16f93af4607445ef274a79bec384f328851d1ec0a2812cd5e8e5b7ee7a61f7f3518522bf588f16a2df5adf5e299aa3fcd6dccd7#npm:3.5.25"],\
