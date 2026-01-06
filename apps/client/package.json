@@ -17,7 +17,7 @@
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^9.39.2",
     "@portfolio/config": "workspace:*",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/vue": "^8.1.0",
