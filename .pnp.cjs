@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:16.2.6"],\
+          ["lint-staged", "npm:16.2.7"],\
           ["prettier", "npm:3.6.2"],\
           ["tgenz1213-portfolio", "workspace:."]\
         ],\
@@ -3227,10 +3227,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:14.0.1", {\
-        "packageLocation": "../../.yarn/berry/cache/commander-npm-14.0.1-2b32a92fa0-10c0.zip/node_modules/commander/",\
+      ["npm:14.0.2", {\
+        "packageLocation": "../../.yarn/berry/cache/commander-npm-14.0.2-538b84c387-10c0.zip/node_modules/commander/",\
         "packageDependencies": [\
-          ["commander", "npm:14.0.1"]\
+          ["commander", "npm:14.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4967,11 +4967,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.2.6", {\
-        "packageLocation": "../../.yarn/berry/cache/lint-staged-npm-16.2.6-0ee184c358-10c0.zip/node_modules/lint-staged/",\
+      ["npm:16.2.7", {\
+        "packageLocation": "../../.yarn/berry/cache/lint-staged-npm-16.2.7-9ab2185fb2-10c0.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["commander", "npm:14.0.1"],\
-          ["lint-staged", "npm:16.2.6"],\
+          ["commander", "npm:14.0.2"],\
+          ["lint-staged", "npm:16.2.7"],\
           ["listr2", "npm:9.0.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["nano-spawn", "npm:2.0.0"],\
@@ -6272,7 +6272,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:16.2.6"],\
+          ["lint-staged", "npm:16.2.7"],\
           ["prettier", "npm:3.6.2"],\
           ["tgenz1213-portfolio", "workspace:."]\
         ],\
