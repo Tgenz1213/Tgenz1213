@@ -1,14 +1,23 @@
 <template>
-  <BaseSection id="hero" custom-class="" disable-fade-in>
+  <BaseSection
+    id="hero"
+    custom-class=""
+    disable-fade-in
+  >
     <h1>Hello!</h1>
     <p>I am Timothy Genz.</p>
     <p>
       <span class="typing-wrapper">
-        <span class="typing-effect">{{ typedText }}</span
-        ><span v-if="showCursor" class="cursor">|</span>
+        <span class="typing-effect">{{ typedText }}</span><span
+          v-if="showCursor"
+          class="cursor"
+        >|</span>
       </span>
     </p>
-    <a href="#projects" class="btn">
+    <a
+      href="#projects"
+      class="btn"
+    >
       View My Work
       <svg
         class="btn-icon"
@@ -22,8 +31,13 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <line x1="5" y1="12" x2="19" y2="12"></line>
-        <polyline points="12 5 19 12 12 19"></polyline>
+        <line
+          x1="5"
+          y1="12"
+          x2="19"
+          y2="12"
+        />
+        <polyline points="12 5 19 12 12 19" />
       </svg>
     </a>
   </BaseSection>

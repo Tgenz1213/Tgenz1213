@@ -2,7 +2,11 @@
   <BaseSection id="projects">
     <h2>My Projects</h2>
     <div class="project-grid">
-      <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+      <ProjectCard
+        v-for="project in projects"
+        :key="project.id"
+        :project="project"
+      />
     </div>
   </BaseSection>
 </template>

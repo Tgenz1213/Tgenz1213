@@ -12,13 +12,21 @@
     class="status-icon"
   >
     <template v-if="name === 'availability'">
-      <circle cx="12" cy="12" r="10" />
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+      />
       <polyline points="12 6 12 12 16 14" />
     </template>
 
     <template v-else-if="name === 'location'">
       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-      <circle cx="12" cy="10" r="3" />
+      <circle
+        cx="12"
+        cy="10"
+        r="3"
+      />
     </template>
 
     <template v-else-if="name === 'work'">
@@ -34,7 +42,11 @@
 
     <template v-else-if="name === 'relocation'">
       <path d="M12 20v-8m0 0V4m0 8h8m-8 0H4" />
-      <circle cx="12" cy="12" r="10" />
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+      />
     </template>
 
     <template v-else-if="name === 'education'">
@@ -44,14 +56,16 @@
 
     <template v-else>
       <!-- default: circle -->
-      <circle cx="12" cy="12" r="10" />
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+      />
     </template>
   </svg>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 const props = defineProps<{ name: string }>()
 const name = props.name || ''
 </script>

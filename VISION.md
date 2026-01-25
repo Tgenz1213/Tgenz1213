@@ -1,14 +1,14 @@
-# Portfolio Web App Development Plan (Vue.js & Google Cloud)
+# Portfolio Web App Development Plan (Vue.js & Cloudflare)
 
-**Goal:** To build and deploy a professional single-page application (SPA) portfolio directly to Google Cloud, leveraging services with a generous free tier. The project will demonstrate modern web development and cloud-native CI/CD practices.
+**Goal:** To build and deploy a professional single-page application (SPA) portfolio directly to Cloudflare Pages, leveraging services with a generous free tier. The project will demonstrate modern web development and cloud-native CI/CD practices.
 
 ---
 
 ## ## Core Technology
 
 - **Framework:** Vue 3 with Vite and TypeScript.
-- **Development Environment:** VS Code, Git, Yarn, ESLint, and Prettier.
-- **Containerization:** Docker.
+- **Development Environment:** VS Code, Git, npm, ESLint, and Prettier.
+- **Hosting / Deployment:** Cloudflare Pages (static site hosting). No containerization.
 
 ---
 
@@ -24,58 +24,64 @@ The site will be a responsive SPA with the following sections:
 
 ---
 
-## ## Deployment Strategy (Google Cloud)
+## ## Deployment Strategy (Cloudflare)
 
-The application will be containerized using **Docker** and deployed to **Google Cloud Run**. This serverless platform provides a robust, auto-scaling, and free-tier-eligible hosting solution. Docker images will be stored in **Google Artifact Registry**.
+The application will be deployed to **Cloudflare Pages** as a static site. Cloudflare Pages provides CDN-backed hosting with automatic builds and easy GitHub integration. Edge functions (Cloudflare Workers) can be used only where server-side logic is required.
 
 ---
 
-## ## CI/CD Pipeline (Cloud Build)
+## ## CI/CD Pipeline (GitHub Actions → Cloudflare Pages)
 
-A fully automated CI/CD pipeline will be implemented using **Google Cloud Build**, triggered by pushes to the `main` branch on GitHub. The pipeline is defined in a `cloudbuild.yaml` file at the project root.
+A fully automated CI/CD pipeline will run on GitHub Actions and deploy to Cloudflare Pages on pushes to `main`. The workflow will:
+
+1. Install dependencies (Node 24).
+2. Run linting.
+3. Run unit tests.
+4. Build the static site.
+5. Deploy the `dist/` output to Cloudflare Pages.
+
+Example GitHub Actions workflow:
 
 ```yaml
-steps:
-  - name: 'gcr.io/cloud-builders/yarn'
-    id: 'Install Dependencies'
-    args: ['install', '--frozen-lockfile']
+name: CI / Deploy
 
-  - name: 'gcr.io/cloud-builders/yarn'
-    id: 'Lint Code'
-    args: ['lint']
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
-  - name: 'gcr.io/cloud-builders/yarn'
-    id: 'Run Unit Tests'
-    args: ['test:unit']
-
-  - name: 'gcr.io/cloud-builders/docker'
-    id: 'Build Docker Image'
-    args:
-      - 'build'
-      - '-t'
-      - 'us-central1-docker.pkg.dev/<YOUR_GCP_PROJECT_ID>/<YOUR_REPO_NAME>/<YOUR_SERVICE_NAME>:$COMMIT_SHA'
-      - '.'
-
-  - name: 'gcr.io/cloud-builders/docker'
-    id: 'Push Docker Image'
-    args:
-      [
-        'push',
-        'us-central1-docker.pkg.dev/<YOUR_GCP_PROJECT_ID>/<YOUR_REPO_NAME>/<YOUR_SERVICE_NAME>:$COMMIT_SHA',
-      ]
-
-  - name: 'gcr.io/[google.com/cloudsdktool/cloud-sdk](https://google.com/cloudsdktool/cloud-sdk)'
-    id: 'Deploy to Cloud Run'
-    entrypoint: gcloud
-    args:
-      - 'run'
-      - 'deploy'
-      - '<YOUR_SERVICE_NAME>'
-      - '--image=us-central1-docker.pkg.dev/<YOUR_GCP_PROJECT_ID>/<YOUR_REPO_NAME>/<YOUR_SERVICE_NAME>:$COMMIT_SHA'
-      - '--region=us-central1'
-      - '--platform=managed'
-      - '--allow-unauthenticated'
-
-images:
-  - 'us-central1-docker.pkg.dev/<YOUR_GCP_PROJECT_ID>/<YOUR_REPO_NAME>/<YOUR_SERVICE_NAME>:$COMMIT_SHA'
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build
 ```
+
+Notes:
+
+- Cloudflare Pages will be connected directly to the GitHub repo via the Cloudflare dashboard.
+
+---
+
+## ## Build and Validation Commands
+
+Follow repository conventions:
+
+- Install: npm install
+- Dev server: npm run dev
+- Build: npm run build
+- Lint: npm run lint
+- Tests: npm run test or npm run test:unit
+- Format: npm run format
+
+Before pushing changes, ensure lint, tests, and build succeed locally to avoid CI failures.
+
+---

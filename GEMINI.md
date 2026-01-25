@@ -94,4 +94,4 @@ We use Vitest for unit and component testing. See Code Quality below for command
 
 ## 6. Code Quality
 
-After making edits to code, use Husky to automatically run testing and linting with the command `yarn prepare`.
+After making edits to code, use Husky to automatically run testing and linting with the command `npm run prepare`.

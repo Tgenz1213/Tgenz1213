@@ -4,7 +4,10 @@
     <div class="about-content-wrapper">
       <div class="about-card">
         <div class="profile-image-wrapper">
-          <img src="/headshot.jpg" alt="A headshot of Timothy Genz" />
+          <img
+            src="/headshot.jpg"
+            alt="A headshot of Timothy Genz"
+          >
         </div>
         <div class="about-text">
           <h3>Who I Am</h3>
@@ -30,7 +33,11 @@
 
       <div class="status-card">
         <div class="status-grid">
-          <div v-for="(s, idx) in statuses" :key="idx" class="status-item">
+          <div
+            v-for="(s, idx) in statuses"
+            :key="idx"
+            class="status-item"
+          >
             <StatusIcon :name="s.icon" />
             <div class="status-text">
               <strong>{{ s.label }}</strong>

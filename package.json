@@ -1,33 +1,58 @@
 {
-  "name": "tgenz1213-portfolio",
-  "version": "0.1.4",
+  "name": "client",
+  "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "exports": {
-    "./tsconfig": "./tsconfig.base.json"
-  },
+  "type": "module",
   "scripts": {
-    "dev": "yarn workspace client dev",
-    "build": "yarn workspaces foreach -Apt run build",
-    "lint": "yarn workspaces foreach -Apt run lint",
-    "test": "yarn workspaces foreach -Apt run test",
-    "test:unit": "yarn workspaces foreach -Apt run test",
-    "format": "yarn prettier --write .",
-    "format:check": "yarn prettier --check .",
-    "prepare": "husky"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:watch": "vitest -w",
+    "test": "vitest run",
+    "lint": "eslint . --fix",
+    "prepare": "husky install",
+    "typecheck": "vue-tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/vue": "^8.1.0",
+    "@types/node": "^24.10.1",
+    "@types/testing-library__vue": "^5.3.0",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "@vitest/eslint-plugin": "^1.6.5",
+    "@vue/compiler-dom": "^3.5.24",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/server-renderer": "^3.5.26",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/typescript-plugin": "^3.2.3",
+    "eslint": "^9.39.2",
+    "eslint-plugin-vue": "^10.7.0",
+    "globals": "^17.1.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.6",
-    "prettier": "^3.6.2"
+    "jsdom": "^27.4.0",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.53.1",
+    "vite": "^7.3.0",
+    "vite-plugin-vue-devtools": "^8.0.5",
+    "vitest": "^4.0.17",
+    "vue-eslint-parser": "^10.2.0"
   },
   "lint-staged": {
-    "*.{js,vue,ts,json,md}": "yarn prettier --write",
-    "apps/client/**/*.{js,vue,ts}": "yarn workspace client eslint --fix",
-    "apps/client/**/*.{spec,test}.{js,ts}": "yarn workspace client vitest related --run"
-  },
-  "packageManager": "yarn@4.10.3"
+    "*.{js,ts,vue}": [
+      "prettier --write",
+      "eslint"
+    ],
+    "*.{css,md,json}": [
+      "prettier --write"
+    ]
+  }
 }

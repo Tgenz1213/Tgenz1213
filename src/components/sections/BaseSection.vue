@@ -3,11 +3,7 @@
     :is="props.as"
     :id="props.id"
     v-bind="$attrs"
-    :ref="
-      (el: Element | null) => {
-        elementRef = el as HTMLElement | null
-      }
-    "
+    ref="elementRef"
     :class="[
       'base-section',
       `variant-${props.variant}`,
@@ -16,7 +12,9 @@
       { 'scroll-fade-in': !props.disableFadeIn },
     ]"
   >
-    <div class="container"><slot /></div>
+    <div class="container">
+      <slot />
+    </div>
   </component>
 </template>
 
@@ -33,7 +31,7 @@ const props = defineProps({
 })
 
 const elementRef = ref<HTMLElement | null>(null)
-let observer: IntersectionObserver | null = null
+let observer: IntersectionObserver | null
 
 onMounted(() => {
   console.log(`BaseSection: onMounted for section ${props.id}`)

@@ -6,9 +6,15 @@
     class="base-card"
     :class="`align-${align}`"
   >
-    <header class="base-card__header"><slot name="header" /></header>
-    <div class="base-card__body"><slot /></div>
-    <footer class="base-card__footer"><slot name="footer" /></footer>
+    <header class="base-card__header">
+      <slot name="header" />
+    </header>
+    <div class="base-card__body">
+      <slot />
+    </div>
+    <footer class="base-card__footer">
+      <slot name="footer" />
+    </footer>
   </component>
 </template>
 

@@ -1,9 +1,15 @@
 <template>
   <header class="app-header">
     <nav class="nav-container">
-      <a href="#hero" class="logo">Tim</a>
+      <a
+        href="#hero"
+        class="logo"
+      >Tim</a>
       <ul class="nav-links">
-        <li v-for="link in navLinks" :key="link.name">
+        <li
+          v-for="link in navLinks"
+          :key="link.name"
+        >
           <a :href="link.path">{{ link.name }}</a>
         </li>
       </ul>
