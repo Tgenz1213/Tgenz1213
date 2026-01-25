@@ -82,10 +82,6 @@ defineProps<{
   transition:
     transform 160ms ease,
     box-shadow 160ms ease;
-}
-
-.btn.source {
-  /* outlined, high-contrast text for readability on dark cards */
   background: transparent;
   color: var(--secondary-color);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -95,12 +91,6 @@ defineProps<{
   transform: translateY(-3px);
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-}
-
-.btn.live {
-  background: transparent;
-  color: var(--secondary-color);
-  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .btn.live:hover {
