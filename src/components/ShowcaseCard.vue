@@ -1,34 +1,16 @@
 <template>
-  <BaseCard
-    :href="href"
-    align="center"
-    role="region"
-    :aria-labelledby="titleId"
-  >
+  <BaseCard :href="href" align="center" role="region" :aria-labelledby="titleId">
     <template #header>
-      <h3
-        :id="titleId"
-        class="title"
-      >
+      <h3 :id="titleId" class="title">
         {{ title }}
       </h3>
-      <p
-        v-if="description"
-        class="desc"
-      >
+      <p v-if="description" class="desc">
         {{ description }}
       </p>
     </template>
 
-    <ul
-      class="tech-list"
-      aria-label="technologies used"
-    >
-      <li
-        v-for="(t, i) in techs"
-        :key="i"
-        class="tech-item"
-      >
+    <ul class="tech-list" aria-label="technologies used">
+      <li v-for="(t, i) in techs" :key="i" class="tech-item">
         {{ t }}
       </li>
     </ul>

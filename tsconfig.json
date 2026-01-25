@@ -15,7 +15,7 @@
     },
     "plugins": [
       {
-        "name": "@vue/typscript-plugin",
+        "name": "@vue/typescript-plugin",
         "location": "node_modules/@vue/language-server",
         "languages": ["vue"]
       }
