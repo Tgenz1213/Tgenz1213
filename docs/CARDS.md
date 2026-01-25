@@ -27,14 +27,18 @@ ShowcaseCard (centered chips):
 </BaseCard>
 ```
 
-ProjectCard (left-aligned image + text):
+ProjectCard (left-aligned image + text with action buttons):
 
 ```vue
-<BaseCard :href="project.link" align="left">
+<BaseCard align="left">
   <template #header>
     <img src="..." />
   </template>
   <div class="project-info">...</div>
+  <template #footer>
+    <a class="btn" href="...">Source</a>
+    <a class="btn" href="...">Live</a>
+  </template>
 </BaseCard>
 ```
 

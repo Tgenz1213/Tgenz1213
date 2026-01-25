@@ -1,5 +1,5 @@
 <template>
-  <BaseCard :href="project.link" align="left">
+  <BaseCard class="project-card" align="left">
     <template #header>
       <img :src="project.image" :alt="project.title" />
     </template>
@@ -8,6 +8,22 @@
       <h3>{{ project.title }}</h3>
       <p>{{ project.description }}</p>
     </div>
+
+    <template #footer>
+      <div class="project-actions">
+        <a class="btn source" :href="project.repo" target="_blank" rel="noopener noreferrer"
+          >Source</a
+        >
+        <a
+          v-if="project.deploy"
+          class="btn live"
+          :href="project.deploy"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Live</a
+        >
+      </div>
+    </template>
   </BaseCard>
 </template>
 
@@ -45,5 +61,57 @@ defineProps<{
 .project-info p {
   margin: 0;
   color: #ccc;
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+  padding: 12px 20px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.btn.source {
+  /* outlined, high-contrast text for readability on dark cards */
+  background: transparent;
+  color: var(--secondary-color);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.btn.source:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.btn.live {
+  background: transparent;
+  color: var(--secondary-color);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.btn.live:hover {
+  transform: translateY(-3px);
+  background: var(--accent-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus-visible for keyboard accessibility */
+.btn:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.12);
+  outline-offset: 2px;
 }
 </style>

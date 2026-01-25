@@ -9,7 +9,8 @@ describe('ProjectCard', () => {
     title: 'Awesome Test Project',
     description: 'This is a description for our test project.',
     image: '/images/test-image.png',
-    link: 'https://example.com',
+    repo: 'https://example.com',
+    deploy: 'https://example-deploy.com',
     tags: ['Testing', 'Vue'],
   }
 
@@ -32,11 +33,17 @@ describe('ProjectCard', () => {
     expect(image.attributes('alt')).toBe(sampleProject.title)
   })
 
-  it('wraps the card in a link with the correct href and security attributes', () => {
-    const link = wrapper.find('a')
-    expect(link.exists()).toBe(true)
-    expect(link.attributes('href')).toBe(sampleProject.link)
-    expect(link.attributes('target')).toBe('_blank')
-    expect(link.attributes('rel')).toBe('noopener noreferrer')
+  it('renders a Source link with correct href and security attributes', () => {
+    const src = wrapper.find('a.source')
+    expect(src.exists()).toBe(true)
+    expect(src.attributes('href')).toBe(sampleProject.repo)
+    expect(src.attributes('target')).toBe('_blank')
+    expect(src.attributes('rel')).toBe('noopener noreferrer')
+  })
+
+  it('renders Live link when deploy is provided', () => {
+    const live = wrapper.find('a.live')
+    expect(live.exists()).toBe(true)
+    expect(live.attributes('href')).toBe(sampleProject.deploy)
   })
 })
