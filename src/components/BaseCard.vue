@@ -48,15 +48,16 @@ const linkAttrs = { target: '_blank', rel: 'noopener noreferrer' }
   box-shadow: var(--card-shadow-hover, 0 8px 20px rgba(16, 24, 40, 0.08));
 }
 .base-card__header,
-.base-card__body,
-.base-card__footer {
+.base-card__body {
   margin: 0;
 }
 
 .base-card__body {
   flex: 1 0 auto;
 }
+
 .base-card__footer {
+  margin: 0;
   margin-top: auto;
 }
 .base-card.align-center {
