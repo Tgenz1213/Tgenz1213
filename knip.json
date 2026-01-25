@@ -1,5 +1,7 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["src/main.ts!", "src/router/index.ts!"],
+  "project": ["**/*.{js,ts,tsx,vue}"],
   "tags": ["-lintignore"],
   "ignoreBinaries": ["vue-tsc"]
 }
