@@ -41,7 +41,8 @@
     "vite": "^7.3.0",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vitest": "^4.0.17",
-    "vue-eslint-parser": "^10.2.0"
+    "vue-eslint-parser": "^10.2.0",
+    "vue-tsc": "^3.2.3"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
