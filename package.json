@@ -13,9 +13,11 @@
     "prepare": "husky install",
     "typecheck": "vue-tsc --noEmit",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "knip": "knip"
   },
   "dependencies": {
+    "@vue/typescript-plugin": "^3.2.3",
     "vue": "^3.5.26",
     "vue-router": "^4.6.3"
   },
@@ -23,7 +25,7 @@
     "@eslint/js": "^9.39.2",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/vue": "^8.1.0",
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.10.9",
     "@types/testing-library__vue": "^5.3.0",
     "@vitejs/plugin-vue": "^6.0.3",
     "@vitest/eslint-plugin": "^1.6.5",
@@ -31,12 +33,12 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/server-renderer": "^3.5.26",
     "@vue/test-utils": "^2.4.6",
-    "@vue/typescript-plugin": "^3.2.3",
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "^10.7.0",
     "globals": "^17.1.0",
     "husky": "^9.1.7",
     "jsdom": "^27.4.0",
+    "knip": "^5.82.1",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
