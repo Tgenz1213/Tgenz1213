@@ -41,9 +41,11 @@ describe('ProjectCard', () => {
     expect(src.attributes('rel')).toBe('noopener noreferrer')
   })
 
-  it('renders Live link when deploy is provided', () => {
+  it('renders Live link when deploy is provided with security attributes', () => {
     const live = wrapper.find('a.live')
     expect(live.exists()).toBe(true)
     expect(live.attributes('href')).toBe(sampleProject.deploy)
+    expect(live.attributes('target')).toBe('_blank')
+    expect(live.attributes('rel')).toBe('noopener noreferrer')
   })
 })
