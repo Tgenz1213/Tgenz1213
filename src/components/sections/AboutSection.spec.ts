@@ -2,10 +2,6 @@ import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import AboutSection from './AboutSection.vue'
 
-vi.mock('headshot.jpg', () => ({
-  default: 'mocked-image-path',
-}))
-
 describe('AboutSection', () => {
   const wrapper = mount(AboutSection)
 
