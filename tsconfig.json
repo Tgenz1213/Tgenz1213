@@ -1,14 +1,13 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./packages/config"
-    },
-    {
-      "path": "./packages/types"
-    },
-    {
-      "path": "./apps/client"
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "isolatedModules": true,
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
     }
-  ]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
