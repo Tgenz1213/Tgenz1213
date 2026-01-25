@@ -29,7 +29,8 @@ const linkAttrs = { target: '_blank', rel: 'noopener noreferrer' }
 
 <style scoped>
 .base-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 1rem;
   border-radius: 8px;
@@ -50,6 +51,13 @@ const linkAttrs = { target: '_blank', rel: 'noopener noreferrer' }
 .base-card__body,
 .base-card__footer {
   margin: 0;
+}
+
+.base-card__body {
+  flex: 1 0 auto;
+}
+.base-card__footer {
+  margin-top: auto;
 }
 .base-card.align-center {
   text-align: center;
