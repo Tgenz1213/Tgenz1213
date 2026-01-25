@@ -12,7 +12,9 @@
       { 'scroll-fade-in': !props.disableFadeIn },
     ]"
   >
-    <div class="container"><slot /></div>
+    <div class="container">
+      <slot />
+    </div>
   </component>
 </template>
 
@@ -29,7 +31,7 @@ const props = defineProps({
 })
 
 const elementRef = ref<HTMLElement | null>(null)
-let observer: IntersectionObserver | null = null
+let observer: IntersectionObserver | null
 
 onMounted(() => {
   console.log(`BaseSection: onMounted for section ${props.id}`)
