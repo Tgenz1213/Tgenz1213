@@ -110,7 +110,7 @@ defineProps<{
 }
 
 /* Focus-visible for keyboard accessibility */
-.btn:focus {
+.btn:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.12);
   outline-offset: 2px;
 }
