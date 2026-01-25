@@ -19,10 +19,10 @@ export function useProjects() {
         id: 2,
         title: 'Weather App',
         description:
-          'A React front end with Go backend that fetches weather data from the weather.gov API and caches the data with Redis.',
+          'A fullstack app that fetches weather data from the weather.gov API and caches the data with Redis.',
         image: '/weather_screen.png',
-        link: 'https://github.com/Tgenz1213/weather',
-        tags: ['Node.js', 'React', 'Go', 'API'],
+        link: 'https://github.com/Tgenz1213/simple-weather',
+        tags: ['Node.js', 'React', 'API'],
       },
       {
         id: 3,
