@@ -1,8 +1,5 @@
 <template>
-  <BaseSection
-    id="contact"
-    centered
-  >
+  <BaseSection id="contact" centered>
     <h2>Get In Touch</h2>
     <p>I'm currently open to new opportunities and collaborations. Feel free to reach out.</p>
     <div class="contact-links">

@@ -1,13 +1,7 @@
 <template>
-  <BaseCard
-    :href="project.link"
-    align="left"
-  >
+  <BaseCard :href="project.link" align="left">
     <template #header>
-      <img
-        :src="project.image"
-        :alt="project.title"
-      >
+      <img :src="project.image" :alt="project.title" />
     </template>
 
     <div class="project-info">
