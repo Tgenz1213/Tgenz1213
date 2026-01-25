@@ -10,7 +10,13 @@ export default defineConfig(
   ...pluginVue.configs['flat/recommended'],
   {
     languageOptions: {
+      parser: pluginVue.parser,
       sourceType: 'module',
+      parserOptions: {
+        parser: tseslint.parser,
+        extraFileExtensions: ['.vue'],
+        ecmaVersion: 'latest',
+      },
       globals: {
         ...globals.browser,
       },
