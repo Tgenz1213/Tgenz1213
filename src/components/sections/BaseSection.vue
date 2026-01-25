@@ -3,11 +3,7 @@
     :is="props.as"
     :id="props.id"
     v-bind="$attrs"
-    :ref="
-      (el: Element | null) => {
-        elementRef = el as HTMLElement | null
-      }
-    "
+    ref="elementRef"
     :class="[
       'base-section',
       `variant-${props.variant}`,
