@@ -14,7 +14,8 @@
     "typecheck": "vue-tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "knip": "knip"
+    "knip": "knip",
+    "knip:production": "knip --production"
   },
   "dependencies": {
     "@vue/typescript-plugin": "^3.2.3",
