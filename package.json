@@ -54,10 +54,5 @@
     "*.{css,md,json}": [
       "prettier --write"
     ]
-  },
-  "paths": {
-    "@/*": [
-      "./src/*"
-    ]
   }
 }
