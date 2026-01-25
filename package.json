@@ -9,16 +9,16 @@
     "preview": "vite preview",
     "test:watch": "vitest -w",
     "test": "vitest --run --changed",
-    "lint": "eslint . --fix"
+    "test:unit": "vitest run",
+    "lint": "eslint . --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@portfolio/types": "workspace:*",
     "vue": "^3.5.26",
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
-    "@portfolio/config": "workspace:*",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/vue": "^8.1.0",
     "@types/node": "^24.10.1",
@@ -26,13 +26,32 @@
     "@vitejs/plugin-vue": "^6.0.3",
     "@vitest/eslint-plugin": "^1.6.5",
     "@vue/compiler-dom": "^3.5.24",
+    "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/server-renderer": "^3.5.26",
     "@vue/test-utils": "^2.4.6",
-    "eslint": "^9.37.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-vue": "^10.7.0",
+    "globals": "^17.1.0",
+    "husky": "^9.1.7",
     "jsdom": "^27.4.0",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.53.1",
     "vite": "^7.3.0",
     "vite-plugin-vue-devtools": "^8.0.5",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.17",
+    "vue-eslint-parser": "^10.2.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

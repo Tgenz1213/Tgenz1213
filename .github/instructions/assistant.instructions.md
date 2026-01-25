@@ -6,12 +6,12 @@
 
 ## Assumptions
 
-- Node 16+ and Yarn are available.
+- Node 24+ and npm are available.
 - Project uses Vue 3, TypeScript, Vite, Vitest, and @testing-library/vue.
 
 ## Base (minimum baseline)
 
-- Required runtime: Node 16+ and Yarn available locally and in CI.
+- Required runtime: Node 24+ and NPM available locally and in CI.
 - CI expectations: PRs must run lint and tests automatically (GitHub Actions); no new lint errors or test failures accepted.
 - Tests & coverage: add/update tests for changed code; aim for maintainable coverage on changed modules (e.g., ~80% as a guide).
 - Accessibility & security: run basic accessibility checks for UI changes and avoid committing secrets or credentials.
@@ -21,18 +21,18 @@
 
 - Stack: Vue 3 + TypeScript, Vite, Vitest.
 - Quick commands:
-  - `yarn lint`
-  - `yarn test`
-  - `yarn vitest run -t "<test name>"`
-  - `yarn install`
+  - `npm run lint`
+  - `npm run test`
+  - `npx vitest run -t "<test name>"`
+  - `npm install`
 
 ## Testing (reference)
 
 - Run lint and unit tests after changes:
-  - `yarn lint`
-  - `yarn test`
+  - `npm run lint`
+  - `npm run test:unit`
 - Add or update tests for any functional change. To run a single test:
-  - `yarn vitest run -t "Test name"`
+  - `npx vitest run -t "Test name"`
 
 ## Comment and code conventions (reference)
 
@@ -47,8 +47,8 @@
 
 ## PR checklist (reference)
 
-- Pass lint (`yarn lint`)
-- Pass tests (`yarn test`)
+- Pass lint (`npm run lint`)
+- Pass tests (`npm run test`)
 - Add or update tests for changed code
 - Include migration note for breaking changes
 - Brief rationale (1–2 lines) for non-obvious decisions

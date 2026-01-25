@@ -7,7 +7,7 @@
 ## ## Core Technology
 
 - **Framework:** Vue 3 with Vite and TypeScript.
-- **Development Environment:** VS Code, Git, Yarn, ESLint, and Prettier.
+- **Development Environment:** VS Code, Git, npm, ESLint, and Prettier.
 - **Containerization:** Docker.
 
 ---
@@ -36,17 +36,17 @@ A fully automated CI/CD pipeline will be implemented using **Google Cloud Build*
 
 ```yaml
 steps:
-  - name: 'gcr.io/cloud-builders/yarn'
+  - name: 'node:24'
     id: 'Install Dependencies'
-    args: ['install', '--frozen-lockfile']
+    args: ['npm', 'install']
 
-  - name: 'gcr.io/cloud-builders/yarn'
+  - name: 'node:24'
     id: 'Lint Code'
-    args: ['lint']
+    args: ['npm', 'run', 'lint']
 
-  - name: 'gcr.io/cloud-builders/yarn'
+  - name: 'node:24'
     id: 'Run Unit Tests'
-    args: ['test:unit']
+    args: ['npm', 'run', 'test']
 
   - name: 'gcr.io/cloud-builders/docker'
     id: 'Build Docker Image'

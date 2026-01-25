@@ -1,10 +1,15 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
     "noEmit": true,
     "isolatedModules": true,
     "lib": ["ESNext", "DOM"],
-    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     }
