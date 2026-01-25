@@ -12,24 +12,25 @@ export function useProjects() {
         description:
           'A responsive personal portfolio built with Vue.js and TypeScript, showcasing my skills and projects.',
         image: '/vue_project_screen.png',
-        link: 'https://github.com/Tgenz1213/Tgenz1213',
+        repo: 'https://github.com/Tgenz1213/Tgenz1213',
         tags: ['Vue.js', 'TypeScript', 'CSS'],
       },
       {
         id: 2,
         title: 'Weather App',
         description:
-          'A React front end with Go backend that fetches weather data from the weather.gov API and caches the data with Redis.',
+          'A fullstack app that fetches weather data from the weather.gov API and caches the data with Redis.',
         image: '/weather_screen.png',
-        link: 'https://github.com/Tgenz1213/weather',
-        tags: ['Node.js', 'React', 'Go', 'API'],
+        repo: 'https://github.com/Tgenz1213/simple-weather',
+        deploy: 'https://weather.tgenz1213.me',
+        tags: ['Node.js', 'React', 'API'],
       },
       {
         id: 3,
         title: 'ML Maze Runner',
         description: 'An ML model that solves the Treasure Hunt game.',
         image: '/Treasure_Hunt_Game_map.png',
-        link: 'https://github.com/Tgenz1213/maze-rl-agent/blob/main/Week_7/TreasureHuntGame/Genz_Timothy_ProjectTwo.ipynb',
+        repo: 'https://github.com/Tgenz1213/maze-rl-agent/blob/main/Week_7/TreasureHuntGame/Genz_Timothy_ProjectTwo.ipynb',
         tags: ['Python', 'AI', 'ML'],
       },
     ]
