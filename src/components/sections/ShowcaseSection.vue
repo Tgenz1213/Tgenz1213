@@ -1,7 +1,9 @@
 <template>
   <BaseSection id="showcase">
     <h2>Showcase</h2>
-    <p class="intro">Technologies and tools used to build this site.</p>
+    <p class="intro">
+      Technologies and tools used to build this site.
+    </p>
     <div class="showcase-grid">
       <ShowcaseCard
         v-for="s in showcases"
