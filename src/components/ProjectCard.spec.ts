@@ -48,4 +48,24 @@ describe('ProjectCard', () => {
     expect(live.attributes('target')).toBe('_blank')
     expect(live.attributes('rel')).toBe('noopener noreferrer')
   })
+
+  it('does not render Live link when deploy is not provided', () => {
+    const projectWithoutDeploy: Project = {
+      id: 2,
+      title: 'Project Without Deploy',
+      description: 'This project has no deploy URL',
+      image: '/images/test-image.png',
+      repo: 'https://example.com',
+      tags: ['Testing'],
+    }
+
+    const wrapperWithoutDeploy = mount(ProjectCard, {
+      props: {
+        project: projectWithoutDeploy,
+      },
+    })
+
+    const live = wrapperWithoutDeploy.find('a.live')
+    expect(live.exists()).toBe(false)
+  })
 })
