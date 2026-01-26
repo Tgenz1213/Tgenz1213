@@ -9,7 +9,6 @@ export default defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
-  eslintConfigPrettier,
   {
     languageOptions: {
       parser: pluginVue.parser,
@@ -24,4 +23,5 @@ export default defineConfig(
       },
     },
   },
+  eslintConfigPrettier,
 )
