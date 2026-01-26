@@ -20,8 +20,8 @@ export function useShowcase() {
       {
         id: 'deployment',
         title: 'Deployment',
-        description: 'Containerized builds, small images, and cloud run deployments.',
-        techs: ['Docker', 'Nginx', 'GCP', 'Cloud Run'],
+        description: 'Automated builds, small images, and Cloudflare Pages deployments.',
+        techs: ['Cloudflare', 'Pages'],
         href: undefined,
       },
     ]
