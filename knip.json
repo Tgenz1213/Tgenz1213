@@ -1,6 +1,5 @@
 {
   "$schema": "https://unpkg.com/knip@5/schema.json",
-  "entry": ["src/main.ts!", "src/router/index.ts!", "src/**/*.spec.ts"],
-  "project": ["**/*.{js,ts,tsx,vue}", "vitest.config.js", "vitest.setup.ts"],
-  "tags": ["-lintignore"]
+  "entry": ["src/router/index.ts!"],
+  "project": ["**/*.{js,ts,tsx,vue}"]
 }
