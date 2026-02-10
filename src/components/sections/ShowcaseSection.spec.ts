@@ -1,11 +1,11 @@
 import { render, screen, cleanup } from '@testing-library/vue'
 import ShowcaseSection from './ShowcaseSection.vue'
 import { useShowcase } from '@/composables/useShowcase'
-import { vi, describe, it, expect, beforeEach, afterEach } from 'vitest'
+import { vi, describe, it, expect, beforeEach, afterEach, beforeAll } from 'vitest'
 import { ref } from 'vue'
 
-// Mock the useShowcase composable
 vi.mock('@/composables/useShowcase')
+vi.mock('/headshot.jpg', () => ({ default: '/headshot.jpg' }))
 
 const mockShowcases = [
   {
@@ -26,6 +26,16 @@ const mockShowcases = [
 
 describe('ShowcaseSection', () => {
   const fetchShowcases = vi.fn()
+
+  beforeAll(() => {
+    globalThis.IntersectionObserver = vi.fn(function () {
+      return {
+        observe: vi.fn(),
+        unobserve: vi.fn(),
+        disconnect: vi.fn(),
+      }
+    }) as unknown as typeof IntersectionObserver
+  })
 
   beforeEach(() => {
     vi.clearAllMocks()

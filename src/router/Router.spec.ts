@@ -1,9 +1,10 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi, beforeAll } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
-
 import App from '@/App.vue'
 import HomeView from '@/views/HomeView.vue'
+
+vi.mock('/headshot.jpg', () => ({ default: '/headshot.jpg' }))
 
 const routes: RouteRecordRaw[] = [
   {
@@ -14,6 +15,16 @@ const routes: RouteRecordRaw[] = [
 ]
 
 describe('Router', () => {
+  beforeAll(() => {
+    globalThis.IntersectionObserver = vi.fn(function () {
+      return {
+        observe: vi.fn(),
+        unobserve: vi.fn(),
+        disconnect: vi.fn(),
+      }
+    }) as unknown as typeof IntersectionObserver
+  })
+
   it('renders the HomeView for the root path', async () => {
     const router = createRouter({
       history: createWebHistory(),
@@ -26,6 +37,12 @@ describe('Router', () => {
     const wrapper = mount(App, {
       global: {
         plugins: [router],
+        stubs: {
+          AboutSection: true,
+          ProjectsSection: true,
+          ShowcaseSection: true,
+          ContactSection: true,
+        },
       },
     })
 
