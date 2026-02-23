@@ -6,6 +6,9 @@ import { defineConfig } from 'eslint/config'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 
 export default defineConfig(
+  {
+    ignores: ['dist/**', '**/dist/**'],
+  },
   eslint.configs.recommended,
   tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
