@@ -27,11 +27,13 @@ export function useProjects() {
       },
       {
         id: 3,
-        title: 'ML Maze Runner',
-        description: 'An ML model that solves the Treasure Hunt game.',
-        image: '/Treasure_Hunt_Game_map.png',
-        repo: 'https://github.com/Tgenz1213/maze-rl-agent/blob/main/Week_7/TreasureHuntGame/Genz_Timothy_ProjectTwo.ipynb',
-        tags: ['Python', 'AI', 'ML'],
+        title: 'PoGo Guide',
+        description:
+          'A knowledge base for the Pokémon Go mobile game. Built with scalable architecture and modern web technologies.',
+        image: '/pogo_guide.png',
+        repo: 'https://github.com/Tgenz1213/pogo-guide',
+        deploy: 'https://pogo.guide',
+        tags: ['Nuxt.js', 'TypeScript', 'Sanity.io'],
       },
     ]
   }
