@@ -5,18 +5,61 @@ updates:
     schedule:
       interval: 'weekly'
     groups:
-      minor-and-patch-updates:
+      vue-and-build-tooling:
+        patterns:
+          - 'vue'
+          - 'vue-router'
+          - 'vite'
+          - '@vitejs/plugin-vue'
+          - 'vite-plugin-vue-devtools'
+          - 'vue-tsc'
+        update-types:
+          - 'minor'
+          - 'patch'
+      linting-and-formatting:
+        patterns:
+          - 'eslint'
+          - '@eslint/*'
+          - 'eslint-*'
+          - 'eslint-plugin-*'
+          - 'prettier'
+          - 'typescript-eslint'
+          - 'vue-eslint-parser'
+          - 'globals'
+          - 'knip'
+          - 'lint-staged'
+          - 'husky'
+        update-types:
+          - 'minor'
+          - 'patch'
+      testing-tooling:
+        patterns:
+          - 'vitest'
+          - '@testing-library/*'
+          - '@vue/test-utils'
+          - 'jsdom'
+        update-types:
+          - 'minor'
+          - 'patch'
+      typescript-and-types:
+        patterns:
+          - 'typescript'
+          - '@types/*'
+          - '@vue/typescript-plugin'
+        update-types:
+          - 'minor'
+          - 'patch'
+      remaining-minor-and-patch-updates:
         patterns:
           - '*'
         update-types:
           - 'minor'
           - 'patch'
-    automerge:
-      enable: true
-      types:
-        - 'minor'
-        - 'patch'
-
+      major-updates:
+        patterns:
+          - '*'
+        update-types:
+          - 'major'
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
@@ -28,8 +71,8 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
-    automerge:
-      enable: true
-      types:
-        - 'minor'
-        - 'patch'
+      major-actions:
+        patterns:
+          - '*'
+        update-types:
+          - 'major'
