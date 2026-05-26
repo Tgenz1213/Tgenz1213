@@ -61,12 +61,6 @@ updates:
           - '*'
         update-types:
           - 'major'
-    automerge:
-      enable: true
-      types:
-        - 'minor'
-        - 'patch'
-
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
@@ -83,8 +77,3 @@ updates:
           - '*'
         update-types:
           - 'major'
-    automerge:
-      enable: true
-      types:
-        - 'minor'
-        - 'patch'
