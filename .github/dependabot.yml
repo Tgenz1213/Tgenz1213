@@ -13,7 +13,6 @@ updates:
           - '@vitejs/plugin-vue'
           - 'vite-plugin-vue-devtools'
           - 'vue-tsc'
-          - '@vue/*'
         update-types:
           - 'minor'
           - 'patch'
